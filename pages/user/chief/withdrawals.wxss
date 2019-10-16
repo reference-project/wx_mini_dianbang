@@ -1,0 +1,114 @@
+page{
+  background-color: #F3F4F6;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  height: 128rpx;
+  border-bottom: 1rpx solid #E1E1E1;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+
+}
+.wrap .items.next{
+  padding: 0 30rpx;
+  background:url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fjr_copy.png)no-repeat right 30rpx  center white;
+  background-size:13rpx 21rpx;
+  width: calc(100% - 60rpx);
+  line-height: 138rpx;
+  height: 138rpx;
+  margin-bottom: 23rpx;
+}
+.wrap .items{
+  line-height: 100rpx;
+  height: 100rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  font-size: 28rpx;
+  background: #ffffff;
+  padding: 0 30rpx;
+  text-align: left;
+}
+.wrap .items input{
+  text-align: left;
+  border: none;
+  height: 96rpx;
+  padding: 0;
+  color: #333333;
+  line-height: 1;
+}
+.bank-box{
+  height:33rpx;
+  font-size:35rpx;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  line-height:28rpx;
+  margin-top: 35rpx;
+}
+.bank-box .num{
+  font-size:25rpx;
+  font-weight:500;
+  color:rgba(128,128,128,1);
+  line-height:28rpx;
+  margin-top: 11rpx;
+}
+.col-30{
+  color: #808080;
+  font-size: 28rpx;
+  font-weight:500;
+}
+.money{
+  color: #808080;
+  font-size: 28rpx;
+  font-weight:500;
+}
+.red{
+  color: #C22F28;
+  font-size: 26rpx;
+}
+.yellow{
+  color: #F0A710;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.unit{
+  color: #CCCCCC;
+  font-size: 28rpx;
+}
+.tips{
+  padding: 39rpx 37rpx;
+  background: #F3F4F6;
+  text-align: left;
+  color: #808080;
+  font-size: 25rpx;
+}
+.tips .title{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2F10.png)no-repeat left center;
+  background-size: 26rpx;
+  padding-left: 37rpx;
+  color: #808080;
+  font-size: 25rpx;
+  margin-bottom: 26rpx;
+  display: inline-block;
+}
+.submit{
+  line-height: 90rpx;
+  background-color: #fbcb67;
+  text-align: center;
+  color: #4f2d1a;
+  font-size: 28rpx;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}

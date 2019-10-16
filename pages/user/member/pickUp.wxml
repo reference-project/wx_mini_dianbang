@@ -1,0 +1,40 @@
+  <view class='container'>
+      <!-- <view class='head-div'>
+          <text class='titleText'>提货</text>
+      </view> -->
+      <view class='total' wx:if="{{list.length!=''}}">您共有{{list.length}}种商品待提货</view>
+      <view class='wrap'>
+          <view class='items'  wx:for='{{list}}' wx:key='{{index}}' data-index='{{index}}'>
+              <view class='check'  wx:if="{{item.state == 35}}">
+                  <image catchtap='setCheck' data-index='{{index}}' hidden='{{!item.checked}}' class='icon'                                                     src='../../images/xz_icon.png'></image>
+                  <image catchtap='setCheck' data-index='{{index}}' hidden='{{item.checked}}' class='icon'                                                      src='../../images/wxz.png'></image>
+              </view>
+              <view class='title'>订单号：
+                  <text class='orderID'>{{item.orderNumber}}</text>    
+                  <text class='type'  wx:if="{{item.state == 30}}">配送中</text>
+              </view>
+              <view class='default' wx:for='{{item.items}}' bindtap='goProduct' wx:key='id' data-productId="{{item.productId}}" data-id="{{item.id}}">
+                  <image src='{{item.productPic}}'></image>
+                  <view class='content'>
+                      <view class='name'>{{item.productName}}</view>
+                      <view class='type'>{{item.optionStrs}}</view>
+                      <view class='money'>￥{{item.price}}
+                          <text>x{{item.quantity}}</text>
+                      </view>
+                  </view>
+              </view>
+          </view>
+      </view>
+      <view class='btn-box'>
+          <view class='col-50'> 
+              <view catchtap='selectAlls' class='selectAlls'>
+                  <image hidden='{{selectAll}}' class='icon2' src='../../images/xz_icon.png'></image>
+                  <image hidden='{{!selectAll}}' class='icon2' src='../../images/wxz.png'></image>
+                  <text>全选</text>
+              </view>
+          </view>
+          <view class='col-50 yellow' catchtap='pickUp' data-obtainCode='obtainCode'>
+              确认提货
+          </view>
+      </view>
+  </view>

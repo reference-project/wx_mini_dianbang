@@ -1,0 +1,14 @@
+  <view class='container'>
+      <!-- <view class='head-div'>
+          <text class='titleText'>提货码</text>
+      </view> -->
+      <view class='wrap'>
+          <text>提货码</text>
+          <view class='items'>
+            	<input type='number' bindinput='setCode' value='{{obtainCode}}'   placeholder-class="place-holder" placeholder='请输入提货码'></input>
+          </view>
+      </view>
+      <view class='submit' bindtap='goSubmit' data-credoId='credoId' data-obtainCode='obtainCode'>
+        提交
+      </view>
+  </view>

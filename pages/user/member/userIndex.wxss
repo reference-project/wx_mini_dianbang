@@ -1,0 +1,131 @@
+/* window {
+   navigationStyle:custom,
+
+} */
+.container {
+}
+.head-div{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fwd_bg_img.png')no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 330rpx;
+  position: relative;
+}
+.head-div .user-div{
+  padding-left: 30rpx;
+  padding-top: 46rpx;
+  text-align: left;
+  position: relative;
+}
+.head-div .user-div .fadeInImg{
+  width: 120rpx;
+  height: 120rpx;
+  border: 4rpx solid rgba(255,255,255,1);
+  border-radius: 50%;
+  margin-right: 27rpx;
+}
+.head-div .user-div .name{
+  font-size: 48rpx;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  top: -80rpx;
+  display: inline-block;
+}
+.head-div .user-div .userId{
+  font-size: 28rpx;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+  left: 185rpx;
+  margin-top: 75rpx;
+
+}
+.head-div .qrCode{
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fmy_face2_icon.png')no-repeat center;
+  background-size: 40rpx;
+} 
+.head-div .Identity{
+  position: absolute;
+  right: 40rpx;
+  top: 159rpx;
+  width: 118rpx;
+  height: 49rpx;
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fhome_qhtz_icon.png')no-repeat center;
+  background-size: cover;
+}
+.wrap{
+  position: relative;
+  top: -90rpx;
+  background: #ffffff;
+  border-radius: 40rpx 40rpx 0rpx 0rpx;
+  width: 100%;
+  
+}
+.wrap .title{
+  margin:30rpx 31rpx;
+  color: #333333;
+  font-size: 28rpx;
+  display: inline-block;
+}
+.wrap .list-div{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.wrap .list-div .navBtn{
+  width: 25%;
+  vertical-align: top;
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fhome_qbdd_icon.png')no-repeat center top;
+  background-size:38rpx 42rpx;
+  display: inline-block;
+  color: #333333;
+  font-size: 24rpx;
+  padding-top: 20rpx;
+}
+.wrap .list-div .payment{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fhome_dfk_icon.png')no-repeat center top;
+  background-size: 43rpx 39rpx;
+}
+.wrap .list-div .extract{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fhome_qbdd_icon.png')no-repeat center top;
+  background-size: 43rpx 39rpx;
+}
+.wrap .list-div .sale{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fhome_sh_icon.png')no-repeat center top;
+  background-size: 37rpx 44rpx;
+}
+.wrap .items{
+  border-bottom: 1rpx solid #e1e1e1;
+  height: 86rpx;
+  margin: 0 30rpx;
+  line-height: 86rpx;
+  text-align: left;
+  /* width: 100%; */
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffh_icon.png')no-repeat center right;
+  background-size: 13rpx 26rpx;
+  
+}
+.wrap .items text{
+  color: #333333;
+  font-size: 28rpx;
+}
+/* 弹窗 */
+.qr-show{
+  height: 876rpx;
+  width: 654rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  z-index: 112;
+  position: fixed;
+  top: 226rpx;
+}
+.qr-show image{
+  width: 100%;
+}

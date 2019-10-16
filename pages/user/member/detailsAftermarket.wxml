@@ -1,0 +1,37 @@
+ <view class='container'>
+      <!-- <view class='head-div'>
+          <text class='titleText'>售后订单详情</text>
+      </view> -->
+      <view class='wrap'>
+          <view class='default'>
+              <view class='items'>
+                  <view class='head'>
+                      <image class='ver-T' src=''></image>
+                      <view class='main-left ver-T'>
+                        <text class='title'>买家申请仅退款，等待商家确认</text>
+                        <text class='time'>2019-08-13 13:43:00</text>
+                      </view>
+                  </view>
+                  <view class='aftermarket-content'>
+                      <view class='aftermarket-content-items'>
+                          <view class='refund'>退款单号：22255</view>
+                          <view class='refund'>退款原因：22255</view>
+                          <view class='refund'>退款金额：22255</view>
+                          <view class='refund'>退款说明：22255</view>
+                          <view class='refund'>上传凭证:
+                            <view class="ver-T img-wrap ">
+                              <image class="ver-T" src=""></image>
+                            </view>
+                          </view>
+                      </view>
+                  </view>
+              </view>
+          </view>
+          <view class='btn-wrap'>
+          	<span >取消售后</span>
+            <span class="red">
+              {{refund.refundState == 1?'修改申请':'重新发起申请'}}
+            </span>
+          </view>
+      </view>
+ </view>

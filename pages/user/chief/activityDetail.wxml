@@ -1,0 +1,28 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>团购详情</text>
+    </view> -->
+    <view class='list-box'>
+        <view class='title'>{{activity.name}}</view>
+        <view class='Request' wx:if="{{activity.credoState==20}}">消费不满{{activity.grouponPrice}}元，且 参团人数未达到{{activity.grouponNumber}}人,未达到参团条件</view>
+        <view class='Request' wx:if="{{activity.credoState==10}}">已参团{{number}}人，共计消费{{activity.activity.money}}元</view>
+        <view class='type' wx:if="{{activity.state==2}}">活动已结束<text>|</text>消费够{{activity.grouponPrice}}元 且 参团人数达到{{activity.grouponNumber}}人，即可成团</view>
+        <view class='type' wx:if="{{activity.state==0}}">活动未开始<text>|</text>消费够{{activity.grouponPrice}}元 且 参团人数达到{{activity.grouponNumber}}人即可成团</view>
+        <view class='type' wx:if="{{activity.state==1}}">活动进行中<text>|</text>消费够{{activity.grouponPrice}}元 且 参团人数达到{{activity.grouponNumber}}人即可成团</view>
+        <view class='time'>活动时间：{{activity.beginTimeStr}} - {{activity.endTimeStr}}</view>
+    </view>
+    <view class='wrap' wx:if="{{activity.products!= ''}}">
+        <view class='title'>全部商品</view>
+        <view class='items' wx:for="{{activity.products}}" wx-key="id" data-id='{{item.id}}' data-activityId="{{item.activityId}}" data-state="{{item.state}}"  bindtap='goDetails'>
+            <image  src='{{item.firstPicFullPath}}'></image>
+            <view class='content'>
+                <view class='name overflow2'>{{item.name}}
+                </view>
+                <view class='money'>￥{{item.priceSale}}<text>￥{{item.markingPrice}}</text></view>
+            </view>
+        </view>
+    </view>
+    <view class='btn-box' wx:if="{{activity.state==0 || activity.state==1}}" bindtap='initiatedBuy' >
+       发起团购
+    </view>
+</view>

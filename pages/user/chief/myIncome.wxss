@@ -1,0 +1,123 @@
+.container{
+  height: 100%
+}
+.head-div{
+  text-align: center;
+  width: 100%;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.list-top{
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  line-height: 88rpx;
+  height: 88rpx;
+}
+.list-top .list-menu{
+  color: #909090;
+  font-size: 28rpx;
+  width: 33%;
+  display: inline-block;
+  position: relative;
+  
+}
+.list-top .list-menu.cur{
+  color: #333333;
+  font-weight: 500;
+}
+.list-top .list-menu.cur::before{
+    content: "";
+    width: 26rpx;
+    left: 45%;
+    height: 4rpx;
+    background-color: #F0A710;
+    position: absolute;
+    bottom: 0;
+}
+.nav-btn{
+  width: 100%;
+  background: #F3F4F6;
+  text-align: center;
+  line-height: 97rpx;
+  height: 97rpx;
+}
+.nav-btn .nav{
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: #808080;
+  font-size: 26rpx;
+}
+.nav-btn .nav.on{
+  color: #F0A710;
+  font-size: 26rpx;
+  font-weight:500;
+}
+.wrap{
+  width: 100%;
+  position: relative;
+  background: #ffffff;
+  margin-bottom: 90rpx; 
+}
+.wrap .items{
+  margin: 0 24rpx;
+  padding: 32rpx 0;
+  width: calc(100% - 48rpx);
+  border-bottom: 1rpx solid #e1e1e1;
+}
+.wrap .items .money{
+  float: right;
+  color: #FF0000;
+  font-size: 28rpx;
+  font-weight:bold;
+}
+.wrap .items .order{
+  color: #333333;
+  font-size: 28rpx;
+  font-weight: 500;
+  margin-bottom: 15rpx;
+}
+.wrap .items .name{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsy_man_icon.png)no-repeat center left;
+  background-size: 20rpx 22rpx;
+  padding-left: 30rpx;
+  color: #909090;
+  font-size: 26rpx;
+  vertical-align: top;
+  margin-bottom: 15rpx;
+}
+.wrap .items .name>text{
+  color: #333333;
+  font-size: 26rpx;
+}
+.wrap .items .time{
+  color: #909090;
+  font-size: 26rpx;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsy_time_icon%20.png)no-repeat center left;
+  background-size: 24rpx;
+  padding-left: 30rpx;
+  margin-top: 10rpx;
+}
+.wrap .items .time>text{
+   color: #333333;
+  font-size: 26rpx;
+}
+.btn-box{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background:#FBCB67;
+  color: #4F2D1A;
+  text-align: center;
+  font-size: 32rpx;
+}

@@ -1,0 +1,593 @@
+page{
+  background-color: #F3F4F6;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  /* top: 0; */
+  height: 128rpx;
+  /* z-index: 2 */
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.swiperM{
+  width: 100%;
+  height: 680rpx;
+  position: relative;
+  text-align: center;
+  /* margin-top: 128rpx; */
+}
+.swiperM image{
+  width: 100%;
+  height: 680rpx;
+}
+.swiperM swiper{
+  height: 100%;
+}
+.imageCount {
+  width: 80rpx;
+  height: 36rpx;
+  background-color: #000000;
+  border-radius: 18rpx;
+  line-height: 36rpx;
+  color: #fff;
+  text-align: center;
+  font-size: 24rpx;
+  position: relative;
+  opacity:0.6;
+  margin: -66rpx auto 0;
+}
+.detail{
+  width: 100%;
+  background: #ffffff;
+}
+.detail .top-box{
+  padding: 0 24rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  position: relative;
+  border-bottom: 1rpx solid #E1E1E1;
+}
+.detail .top-box .money{
+  color: #FF0000;
+  font-size: 48rpx;
+  font-weight: bold;
+  line-height: 110rpx;
+}
+.detail .top-box .money .pt{
+  width:79rpx;
+  height:39rpx;
+  border:1rpx solid rgba(255,0,0,1);
+  border-radius:4rpx;
+  line-height: 39rpx;
+  font-size: 32rpx;
+  color: #FF0101;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: -6rpx;
+}
+.detail .top-box .money .symbol{
+  font-size: 32rpx;
+  /* font-weight: 500; */
+}
+.detail .top-box .money .decoration{
+  font-size:26rpx;
+  font-weight:500;
+  text-decoration:line-through;
+  color:rgba(144,144,144,1);
+}
+.detail .top-box .money .end{
+  color: #333333;
+  font-size: 24rpx;
+  font-weight:500;
+  display: inline-block;
+  float: right;
+}
+.detail .top-box .money .end .time{
+  display: inline-block;
+  width:130rpx;
+  height:26rpx;
+  line-height: 26rpx;
+  background:rgba(51,51,51,1);
+  color: #FFFFFF;
+  font-size: 20rpx;
+  text-align: center;
+  font-weight:500;
+}
+.detail .top-box .num{
+  position: absolute;
+  color: #909090;
+  font-size: 24rpx;
+  right: 24rpx;
+  bottom: 18rpx;
+  line-height: 1;
+}
+.detail .bottom-box{
+  border-bottom: 1rpx solid #E1E1E1;
+  padding: 27rpx 24rpx 29rpx;
+  position: relative;
+}
+.detail .bottom-box .name{
+  color: #323232;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.detail .bottom-box .share{
+  position: absolute;
+  right: 0;
+  width:86rpx;
+  height:42rpx;
+  border-radius:21rpx 0rpx 0rpx 21rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  color: #F0A710;
+  top: 85rpx;
+  line-height: 42rpx;
+  text-align: center;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffx_icon.png)no-repeat center left 17rpx #F3F3F3;
+  background-size: 22rpx;
+  padding-left: 20rpx
+}
+.detail .bottom-box .introduction{
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+
+}
+.detail .bottom-box .introduction text{
+  width: 50%;
+  color: #909090;
+  font-size: 24rpx;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fhs_fx_icon.png)no-repeat center left;
+  background-size: 21rpx;
+  padding-left: 34rpx;
+}
+.detail .bottom-box .introduction .pay{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fhs_ygm_icon.png)no-repeat center left;
+  background-size: 21rpx;
+  margin-right: 200rpx;
+}
+.evaluate{
+  margin-top: 20rpx;
+  padding: 24rpx;
+  text-align: left;
+  position: relative;
+  background: #ffffff;
+  width: calc(100% - 48rpx);
+}
+.evaluate .number{
+  color: #333333;
+  font-size: 28rpx;
+  font-weight:500;
+}
+.evaluate .all{
+  float: right;
+  color: #F0A710;
+  font-size: 24rpx;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fjr_ckqb_pj.png)no-repeat center right;
+  background-size: 11rpx 18rpx;
+  padding-right: 20rpx;
+}
+.evaluate .user{
+  text-align: left;
+  margin-top: 28rpx;
+  vertical-align: top;
+}
+.evaluate .user image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 23rpx;
+}
+.evaluate .user .name{
+  display: inline-block;
+  color: #909090;
+  font-size: 28rpx;
+  vertical-align: top;
+  position: relative;
+  top: 5rpx;
+}
+.evaluate .user .text{
+  color: #333333;
+  font-size: 28rpx;
+  margin-top: 8rpx;
+}
+.wrap{
+  margin-top: 20rpx;
+  width: 100%;
+  background: #ffffff;
+  margin-bottom:120rpx;
+
+}
+.wrap .nav-box{
+  height: 62rpx;
+  width: 100%;
+  line-height: 62rpx;
+  text-align: center;
+  display: inline-block;
+}
+.wrap .nav-box .nav{
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: #808080;
+  font-size: 26rpx;
+}
+.wrap .nav-box .nav.on{
+  color: #F0A710;
+  font-size: 26rpx;
+  font-weight:500;
+  position: relative;
+}
+.wrap .nav-box .nav.on::before{
+    content: "";
+    width: 107rpx;
+    left: 36%;
+    height: 4rpx;
+    background-color: #F0A710;
+    position: absolute;
+    bottom: 0;
+}
+.wrap .picture{
+ width: 100%;
+}
+.wrap .buy{
+  width: 100%;
+}
+.footer-box{
+  width:100%;
+  height:100rpx;
+  line-height: 100rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx 0rpx 17rpx 0rpx rgba(0, 0, 0, 0.12);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+}
+.footer-box .icon{
+  display: inline-block;
+  width: 294rpx;
+}
+.footer-box .icon text{
+  width: 33%;
+  height: 100rpx;
+  display: inline-block;
+}
+.footer-box .icon .sy{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsy_db.png)no-repeat center;
+  background-size: 38rpx 62rpx;
+  margin-right: -15rpx;
+}
+.footer-box .icon .sc{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsc_db.png)no-repeat center;
+  background-size: 39rpx 62rpx;
+}
+.footer-box .icon .sc.on{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsc_dl_db%402x.png')no-repeat center;
+  background-size: 39rpx 62rpx;
+}
+.footer-box .gwc{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fgwc_db.png)no-repeat center;
+  background-size: 58rpx 63rpx;
+  margin-right: -15rpx;
+}
+.footer-box .btn{
+  display: inline-flex;
+  float: right;
+  text-align: left;
+  width: calc(100% - 294rpx);
+  line-height: 100rpx;
+}
+
+.footer-box .btn .joinCar{
+  color: #4C2D19;
+  font-size: 28rpx;
+  background:  #FBCB67;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0;
+  line-height: 100rpx;
+}
+.footer-box .btn .disabled{
+  border-right: 1rpx solid #ffffff;
+}
+.footer-box .btn .buy{
+  color: #FBCB67;
+  font-size: 28rpx;
+  background:  #333333;
+  text-align: center;
+  display: inline-block;
+   border-radius: 0;
+  line-height: 100rpx;
+
+}
+.guide{
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+}
+/* .tc-show{
+  width: 654rpx;
+  border-radius: 40rpx;
+  background: #ffffff;
+  margin-top: 246rpx auto;
+  position: fixed;
+  z-index: 112;
+  top: 246rpx;
+}
+.tc-show .pic{
+  width: 100%;
+  height: 584rpx;
+  border-radius: 40rpx 40rpx 0px 0px;
+}
+.tc-show .name{
+  color: #323232;
+  font-size: 34rpx;
+  padding: 10rpx 24rpx 0;
+  font-weight:500;
+}
+.tc-show .content{
+  text-align: left;
+}
+.tc-show .content .qrcode{
+  float: right;
+  width: 164rpx;
+  height: 157rpx;
+  margin-right: 24rpx;
+  margin-bottom: 30rpx;
+  
+}
+.tc-show .content .money{
+  font-size: 48rpx;
+  color: #FF0000;
+  font-weight:bold;
+}
+.tc-show .content .money .icon{
+  font-size: 32rpx;
+  margin-left: 24rpx;
+  margin-right: -10rpx;
+}
+.tc-show .content .money .num{
+  font-weight:500;
+  text-decoration:line-through;
+  color: #909090;
+  font-size: 26rpx;
+  margin-left: 8rpx;
+}
+.tc-show .user{
+  text-align: left;
+  padding-left: 24rpx;
+  margin-top: 19rpx;
+  display: inline-block;
+}
+.tc-show .user image{
+  width:50rpx;
+  height:50rpx;
+  border-radius:50%;
+  margin-right: 22rpx;
+}
+.tc-show .user text{
+  color: #333333;
+  font-size: 24rpx;
+  margin-top: -10rpx;
+  position: relative;
+  top: -15rpx;
+}
+.save{
+  color: #FFFFFF;
+  font-size: 28rpx;
+  font-weight:500;
+  z-index: 112;
+  position: relative;
+  margin: 0 auto;
+  top: 70rpx;
+  text-align: center;
+  display: inline-block;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fbc_tk.png)no-repeat center right;
+  background-size: 30rpx 24rpx;
+  padding-right: 45rpx;
+  left: 222rpx;
+} */
+.tc-show{
+  width: 100%;
+  position: fixed;
+  z-index: 112;
+  top: 0;
+  bottom: 0;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ftk_yd_icon.png)no-repeat center top 100rpx;
+  background-size: 70%;
+}
+.show-box{
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 112;
+  border-radius:40rpx 40rpx 0rpx 0rpx;
+}
+.show-box icon{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Foff_tc_icon.png)no-repeat center;
+  width: 24rpx;
+  height: 22rpx;
+  display: block;
+  background-size: 22rpx 20rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 32rpx;
+  }
+.show-box .top-view{
+  padding: 24rpx 24rpx 0;
+}
+.show-box .top-view image{
+  width: 165rpx;
+  height: 165rpx;
+  object-fit: over;
+  vertical-align: top;
+  margin-right: 29rpx;
+}
+.show-box .top-view .content{
+  display: inline-block;
+  width: 450rpx;
+  text-align: left;
+}
+.show-box .top-view .content .money{
+  color: #FF0000;
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  
+}
+.show-box .top-view .content .money>text{
+  font-size:26rpx;
+  font-weight:500;
+  text-decoration:line-through;
+  color:rgba(144,144,144,1);
+  line-height:36rpx;
+}
+.show-box .top-view .content .num{
+  font-size:24rpx;
+  font-weight:500;
+  color:rgba(144,144,144,1);
+  line-height:36rpx;
+  margin-bottom: 14rpx;
+}
+.show-box .top-view .content .choise{
+  font-size:24rpx;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  line-height:36rpx
+}
+.show-box .box-btn{
+  padding: 60rpx 24rpx 0;
+}
+.show-box .box-btn .title{
+  font-size:32rpx;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  line-height:36rpx;
+  margin-bottom: 24rpx;
+}
+.show-box .box-btn .type{
+  padding: 0 30rpx;
+  height:64rpx;
+  background:rgba(242,242,242,1);
+  border-radius:32rpx;
+  line-height: 64rpx;
+  color: #333333;
+  font-size: 26rpx;
+  text-align: center;
+  display: inline-block;
+  font-weight:500;
+  margin-right: 24rpx;
+  margin-bottom: 24rpx;
+}
+.show-box .box-btn .type.active{
+  background:rgba(240,167,16,0.05);
+  border:1rpx solid rgba(240,167,16,1);
+  color:rgba(240,167,16,1);
+}
+.show-box .amount{
+  padding: 46rpx 24rpx 0;
+  text-align: left;
+  position: relative;
+  margin-bottom: 225rpx;
+}
+.show-box .amount .sum{
+  font-size:32rpx;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  line-height:36rpx;
+}
+.show-box .amount .step view.num{
+  background: #F7F7F7;
+  color: #4C2D19;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.show-box .amount .step view{
+  display:inline-block;
+  width:50rpx;
+  line-height:50rpx;
+  height:50rpx;
+  text-align:center;
+}
+.show-box .amount .step{
+  position: absolute;
+  right: 10rpx;
+  text-align: right;
+  margin-top: -5rpx;
+}
+.show-box .submit{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 100rpx;
+}
+.show-box .submit>view{
+  color: #4C2D19;
+  background:rgba(251,203,103,1);
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+  display: inline-block;
+}
+.show-box .submit .black{
+  color: #FBCB67;
+  background: #333333;
+
+}
+.gg{
+  width: 100rpx;
+height: 100rpx;
+}
+.dialog-sort{
+    padding: 0.31rem 0 0.3rem 0;
+    margin: 0 0.22rem;
+}
+
+.dialog-sort .title {
+    font-size: 0.26rem;
+    line-height: 0.28rem;
+    margin-bottom: 0.3rem;
+    color: #323232;
+}
+.sort-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sort-item {
+    font-size: 0.23rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0.24rem;
+    margin-bottom: 0.2rem;
+    padding: 0.07rem 0.15rem 0.08rem 0.15rem;
+    border-radius: 0.1rem;
+    border: 0.01rem solid #f5f5f5;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+button[disabled]{
+background: gainsboro !important;
+color:#333333 !important;
+
+}

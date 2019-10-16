@@ -1,0 +1,35 @@
+ <view class='container'>
+      <!-- <view class='head-div'>
+          <text class='titleText'>售后订单</text>
+      </view> -->
+      <view class='wrap'>
+          <view class='items' bindtap='goDetail' wx:for="{{list}}" wx:key="id" data-id="{{item.id}}">
+              <view class='top'>
+                  <text class='type'>{{item.refundStateStr}}</text>
+                  <view class='orderID'>订单{{item.refundNumber}}</view>
+                  <view class='clean'></view>
+              </view>
+              <view class='content'>
+                  <image src='' class='ver-T'></image>
+                  <view class='product-content ver-T'>
+                      <view class='box1'>
+                        <text>x1</text>
+                        <view class='overflow name'>{{item.productName}}</view>
+                         <view class='clean'></view>
+                      </view>
+                      <view class='box2'>退款金额：￥{{item.applyPrice}}</view>
+                  </view>
+              </view>
+              <view class='btn-wrap text-right'>
+                  	<span class="black-btn" v-if="refund.refundState == 1">取消售后</span>
+                    <span class="black-btn" v-if="refund.refundState == 1 || refund.refundState == 6">
+                      {{refund.refundState == 1?'修改申请':'重新发起申请'}}
+                    </span>
+              </view>
+          </view>
+      
+      </view>
+
+
+
+</view>

@@ -1,0 +1,43 @@
+<view class='container'>
+    <view class='head-div'>
+        <!-- <text class='titleText'>我的收益</text> -->
+        <view class="list-top">
+            <view data-num="1" class="list-menu list-menu1 {{num==1?'cur':''}}" bindtap="menuClick">可提现收益</view>
+            <view data-num="2" class="list-menu list-menu2 {{num==2?'cur':''}}" bindtap="menuClick">待结算收益</view>
+            <view data-num="3" class="list-menu list-menu3 {{num==3?'cur':''}}" bindtap="menuClick">提现记录</view>
+        </view>
+    </view>
+    <!-- 可提现列表 -->
+    <view class='wrap'  wx:if="{{num==1 && list.length!= 0}}">
+        <view class="items" wx:for="{{list}}"  wx:key="id"  data-id="{{item.id}}">
+            <text class='money'>￥{{item.totalPrice}}</text>
+            <view class='order'>订单{{item.orderNumber}}</view>
+            <view class='name'>买家姓名：<text>{{item.name}}</text></view>
+            <view class='time'>结算时间：<text>{{item.calcTime}}</text></view>
+        </view>
+    </view>
+    <!-- 待结算列表 -->
+    <view class="wrap"  wx:if="{{num==2 && listOrder!= 0}}">
+        <view class="items" wx:for="{{listOrder}}"  wx:key="id"  data-id="{{item.id}}">
+            <text class='money'>￥{{item.totalPrice}}</text>
+            <view class='order'>订单{{item.totalPrice}}</view>
+            <view class='name'>买家姓名：<text>{{item.name}}</text></view>
+            <view class='time'>提货时间<text>{{item.confirmTime}}</text></view>
+        </view>
+    </view>
+    <!-- 提现记录 -->
+    <view class="wrap"   wx:if="{{num==3 && withdrawList!=0}}">
+        <view class="items" wx:for="{{withdrawList}}"  wx:key="id"  data-id="{{item.id}}">
+            <!-- <text class='type'>{{withdrawList.stateStr}}</text> -->
+            <text class='type' wx:if="{{item.state==0}}">待审核</text>
+            <text class='type' wx:if="{{item.state==10}}">审核通过(未支付)</text>
+            <text class='type' wx:if="{{item.state==20}}">已支付</text>
+            <text class='type' wx:if="{{item.state==30}}">审核拒绝</text>
+            <view class='money'>￥{{item.factMoney}}</view>
+            <view class='time'>创建时间：<text>{{item.createTimeStr}}</text></view>
+        </view>
+    </view>
+    <view class='btn-box' bindtap='goWithdrawals'>
+    提现
+    </view>
+</view>

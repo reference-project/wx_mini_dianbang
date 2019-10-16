@@ -1,0 +1,79 @@
+page{
+  background-color: #F5F5F5;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: fixed;
+  height: 128rpx;
+  top: 0;
+  z-index: 2
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  margin: 20rpx 24rpx;
+  text-align: left;
+  width: calc(100% - 48rpx);
+  margin-top: 20rpx;
+
+}
+.wrap .items{
+  width: 341rpx;
+  border-radius:20rpx;
+  display: inline-block;
+  background: #ffffff;
+  margin-bottom: 20rpx;
+}
+.wrap .items:nth-child(2n){
+  margin-left: 20rpx;
+}
+.wrap .items image{
+  width: 341rpx;
+  height: 341rpx;
+  border-radius:20rpx 20rpx 0rpx 0rpx;
+}
+.wrap .items .content{
+  padding: 10rpx 20rpx 20rpx;
+  font-family:PingFang SC;
+}
+.wrap .items .content .name{
+  font-size: 28rpx;
+  color: #323232;
+  font-weight:500;
+  height: 61rpx;
+  line-height: 30rpx;
+
+}
+.wrap .items .content .money{
+  color: #FF0000;
+  font-size: 36rpx;
+  font-weight:bold;
+  margin-top: 14rpx;
+}
+.wrap .items .content .money text{
+  font-weight:500;
+  text-decoration:line-through;
+  color: #909090;
+  font-feature-settings: 24rpx;
+  margin-left: 5rpx;
+  font-size: 24rpx;
+}
+.wrap .items .content .del{
+  width: 29rpx;
+  height: 32rpx;
+  float: right;
+  margin-top:8rpx;
+
+}
+.null-div{
+  margin-top: 290rpx;
+}

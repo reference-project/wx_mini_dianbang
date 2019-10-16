@@ -1,0 +1,71 @@
+page{
+  background-color: #ffffff;
+}
+.head-div{
+  height: 130rpx;
+  text-align: center;
+  background: #ffffff;
+  width: 100%;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  padding: 0 24rpx; 
+  width: calc(100% - 48rpx);
+}
+.bankCard{
+  background: #E75C66;
+  width: 100%;
+  margin-top: .24rem;
+  color: #FFFFFF;
+  height: 221rpx;
+  border-radius: 12rpx;
+  position: relative;
+}
+.bankCard .bank{
+  background-size: 32rpx;
+  top: 39rpx;
+  position: relative;
+  padding: 0 30rpx;
+}
+.bankCard .number{
+  padding-left: 30rpx;
+  position: absolute;
+  bottom: 40rpx;
+  font-size: 40rpx;
+}
+.bankCard .triangle{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fbank_sj_icon.png)no-repeat right;
+  background-size: 131rpx 100rpx;
+  width: 131rpx;
+  height: 100rpx;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+.bankCard .triangle>text{
+  font-style: normal;
+  font-size: 26rpx;
+  color: #E75C66;
+  font-weight: 800;
+  right: 14rpx;
+  bottom: 16rpx;
+  position: absolute;
+}
+.submit{
+  line-height: 90rpx;
+  background-color: #fbcb67;
+  text-align: center;
+  color: #4f2d1a;
+  font-size: 28rpx;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}

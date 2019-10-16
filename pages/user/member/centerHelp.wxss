@@ -1,0 +1,65 @@
+.container{
+  height: 100vh;
+  background: #FFFFFF;
+}
+.head-div{
+  text-align: center;
+  width: 100%;
+  position: relative;
+  background: #FFFFFF;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #FFFFFF;
+}
+.scroll-view_H .scroll-view-item{
+  width: 33%;
+  display: inline-block;
+  color: #909090;
+  font-size: 28rpx;
+  position: relative;
+  text-align: center;
+}
+.g-box1{
+  background-color: #fff;
+  border-top: 2rpx solid #eaeaeb;
+  width: 100%;
+}
+.g-box1 .m-t1{
+  font-size: 28rpx;
+  font-weight: bold;
+  border-bottom: 2rpx solid #f1f1f1;
+  line-height: 97rpx;
+  margin: 0 28rpx;
+}
+.g-box1 .ul-help{
+  padding: 0rpx 28rpx 59rpx;
+  list-style: none;
+  margin: 0;
+}
+.g-box1 .ul-help .items{
+  border-bottom: 2rpx solid #f1f1f1;
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+.g-box1 .ul-help .items>text{
+  display: block;
+  height: 94rpx;
+  line-height: 94rpx;
+  font-size: 28rpx;
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffh_icon.png') no-repeat right center;
+  background-size: 15rpx auto;
+  color: #333333;
+}

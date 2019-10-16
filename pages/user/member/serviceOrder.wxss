@@ -1,0 +1,93 @@
+page{
+  background-color: #ffffff;
+  text-align: center;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  /* top: 0;
+  z-index: 2; */
+  height: 128rpx;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  width: 100%;
+  background: #ffffff;
+  text-align: left;
+  /* margin-top: 128rpx; */
+
+}
+.wrap .items{
+    padding: 30rpx 30rpx 0;
+    width: calc(100% - 60rpx);
+    margin-bottom: 20rpx;
+    border-bottom: 1rpx solid #eaeaeb;
+}
+.wrap .items .top{
+  line-height: 74rpx;
+  font-size: 25rpx;
+}
+.wrap .items .top .orderID{
+  color: #333333;
+}
+.wrap .items .top .type{
+  color: #f0a710;
+  float: right;
+}
+.wrap .items .content{
+  background: #f8f8f8;
+}
+.wrap .items .content image{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}
+.wrap .items .content .product-content{
+   width: 530rpx;
+}
+.wrap .items .content .product-content .box1 text{
+  color: #616161;
+  font-size: 28rpx;
+  float: right;
+  line-height: 34rpx;
+}
+.wrap .items .content .product-content .box1 .name{
+  color: #333;
+  font-size: 28rpx;
+  width: 400rpx;
+  line-height: 34rpx;
+}
+.wrap .items .content .product-content .box2{
+    font-size: .28rem;
+    color: #C13028;
+    line-height: .3rem;
+    margin-top: 65rpx;
+}
+.wrap .items .btn-wrap{
+    padding: 0 0 20rpx;
+
+}
+.wrap .items .btn-wrap span{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10rpx;
+    padding: 0 20rpx;
+    line-height: 54rpx;
+    border-radius: 10rpx;
+    border: 2rpx solid #e7e7e7;
+    font-size: 28rpx;
+    min-width: 80rpx;
+    text-align: center;
+    color: #333;
+    margin-top: 18rpx;
+}

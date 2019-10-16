@@ -1,0 +1,7 @@
+<view>
+    <view class="footerOnly">
+        <view class="ver-T index {{tabIndex == 0 ? 'on' : ''}}" bindtap='goIndex'></view>
+        <view class="ver-T heading {{tabIndex == 1 ? 'on' : ''}}" bindtap='goCar'></view>
+        <view class="ver-T my {{tabIndex == 2 ? 'on' : ''}}" bindtap='goMyIndex'></view>
+    </view>
+</view>

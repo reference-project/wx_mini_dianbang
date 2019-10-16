@@ -1,0 +1,227 @@
+.container{
+  height: 100%;
+  background: #F3F4F6;
+}
+.head-div{
+  height: 105rpx;
+  background: #F0A710;
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  position: relative;
+}
+.head-div .style{
+  color: #333333;
+  position: absolute;
+  bottom: 30rpx;
+  font-size: 34rpx;
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ftz_dsh_icon.png')no-repeat center left 29rpx;
+  background-size: 40rpx 32rpx;
+  padding-left: 91rpx;
+}
+.head-div .dfh{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fmy_dfh_icon.png')no-repeat center left 29rpx;
+  background-size: 40rpx 34rpx;
+}
+.head-div .dth{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fmy_dth_icon.png')no-repeat center left 29rpx;
+  background-size: 40rpx 34rpx;
+}
+.head-div .ywc{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fmy_ywc_icon.png')no-repeat center left 29rpx;
+  background-size: 40rpx 34rpx;
+}
+.information{
+  padding: 24rpx;
+  display: inline-block;
+  position: relative;
+  width: calc(100% - 48rpx);
+  background: #FFFFFF;
+}
+.information .community{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fgj_dw_icon.png)no-repeat top 8rpx left;
+  background-size: 22rpx 26rpx;
+  padding-left: 30rpx;
+  color: #333333;
+  font-size: 28rpx;
+  vertical-align: top;
+  font-weight:bold;
+  margin-top: -.1rpx;
+
+}
+.information .community text{
+    background: #FF0000;
+    font-size: 24rpx;
+    color: #FFFFFF;
+    border-radius: 5rpx;
+    width: 102rpx;
+    height: 32rp;
+    display: inline-block;
+    text-align: center;
+    line-height: 32rpx;
+    font-weight: 500;
+}
+.information .community .sqName{
+   font-weight: 500;
+   margin-top: 10rpx;
+}
+.information .community .adress{
+  font-size: 24rpx;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
+.information .community .user{
+  font-size: 24rpx;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
+.information .receiver{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fshr_xx_icon.png')no-repeat top 8rpx left;
+  background-size: 22rpx 26rpx;
+  padding-left: 30rpx;
+  color: #333333;
+  font-size: 28rpx;
+  vertical-align: top;
+  font-weight:bold;
+  margin-top: 36rpx;
+}
+.information .receiver .phone{
+   font-size: 24rpx;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
+.wrap{
+  background: #FFFFFF;
+  margin-top: 20rpx;
+  width: 100%
+}
+.wrap .items{
+   padding: 24rpx;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: calc(100% - 48rpx)
+}
+.wrap .items image{
+   width: 165rpx;
+  height: 165rpx;
+  margin-right: 24rpx;
+  vertical-align: top;
+}
+.wrap .items .content{
+  display: inline-block;
+  text-align: left;
+  width: calc(100% - 190rpx);
+}
+.wrap .items .content .name{
+  color: #333333;
+  font-size: 28rpx;
+}
+.wrap .items .content .style{
+  color: #909090;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.wrap .items .content .money{
+  color: #333333;
+  font-size: 28rpx;
+  font-weight:500;
+  margin-top: 20rpx;
+}
+.wrap .items .content .money .num{
+  color: #909090;
+  font-size: 24rpx;
+  font-weight:500;
+  margin-left: 17rpx;
+}
+.wrap .items .content .money .btn{
+  height: 53rpx;
+  line-height: 53rpx;
+  width: 150rpx;
+  text-align: center;
+  border:1rpx solid rgba(214,215,220,1);
+  border-radius:27px;
+  color: #909090;
+  font-size: 26rpx;
+  float: right;
+  margin-top: -20rpx;
+
+}
+.wrap .total-box{
+  width: calc(100% -48rpx) ;
+  padding: 40rpx 24rpx 25rpx;
+}
+.wrap .total-box .total{
+  color: #909090;
+  font-size: 24rpx;
+}
+.wrap .total-box .total text{
+  float: right;
+  color: #323232;
+}
+.wrap .total-box .freight{
+  margin-top: 13rpx;
+}
+.wrap .total-box .payment{
+  color: #323232;
+  font-size: 28rpx;
+  margin-top: 13rpx;
+}
+.wrap .total-box .payment text{
+  float: right;
+  color: #F0A710;
+}
+.order-box{
+  margin-top: 20rpx;
+  background: #FFFFFF;
+  padding: 24rpx;
+  width: calc(100% - 48rpx);
+  text-align: left;
+  /* margin-bottom: 130rpx; */
+}
+.order-box text{
+  color: #323232;
+  font-size: 28rpx;
+  font-weight:bold;
+}
+.order-box view{
+  color: #909090;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+.order-box view>label{
+  color: #F2A032;
+  float: right;
+}
+.order-box .order{
+  margin-top: 30rpx;
+}
+.btn-box{
+  width: calc(100% - 24rpx);
+  padding-right: 24rpx;
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #FFFFFF;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 20rpx;
+  text-align: right;
+  box-shadow:0px 0px 17px 0px rgba(0, 0, 0, 0.12);
+}
+.btn-box text{
+  width: 150rpx;
+  height: 53rpx;
+  border:1rpx solid rgba(214,215,220,1);
+  border-radius:27rpx;
+  color: #909090;
+  font-size: 26rpx;
+  display: inline-block;
+  line-height: 53rpx;
+  text-align: center;
+}
+.btn-box .yellow{
+  border:1px solid rgba(240,167,16,1);
+  margin-left: 24rpx;
+}

@@ -1,0 +1,86 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>购物车</text>
+    </view> -->
+    <view class='wrap' wx:if="{{normalList != 0}}">
+        <view class='items' wx:for='{{normalList}}' wx:key='{{index}}' style='left: -{{item.left}}px' bindtouchstart="touchStart" bindtouchmove="touchM" data-index='{{index}}' bindtouchend="touchE">
+            <view class='check'>
+              <image catchtap='setCheck' data-index='{{index}}' hidden='{{!item.checked}}' class='icon'  src='../images/xz_icon.png'></image>
+              <image catchtap='setCheck' data-index='{{index}}' hidden='{{item.checked}}' class='icon' src='../images/wxz.png'></image>
+            </view>
+              <view class='remove text-center bg-red' data-id='{{item.id}}' bindtap="delet"    hidden='{{item.left == "0"}}'>
+                  <image  src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsc_img%402x.png'></image>
+              </view>
+            <view class='content'>
+                <image  src='{{item.productFirstPic}}'></image>
+                <view class='text-div'>
+                    <view class='titel'>
+                       {{item.productName}}
+                    </view>
+                    <text class='type'>{{item.optionStrs}}</text>
+                    <view class='amount flex-row'>
+                        <view class='sum'>
+                          {{item.productPriceSale}}
+                          <text>￥{{item.productMarkingPrice}}</text>
+                        </view>
+                        <view class='step col-40'>
+                          <view class='minus' style='{{ "color: #323232;"}}' data-id="{{item.id}}" data-number="{{item.quantity}}" data-pro="{{item.productProfits}}" bindtap='minusClick'>-</view>
+                          <view class='num'>{{item.quantity}}</view>
+                          <view class='plus' style='{{ "color: #F0A710;"}}'data-id="{{item.id}}" data-number="{{item.quantity}}" data-pro="{{item.productProfits}}"bindtap='addClick'>+</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 空页面 -->
+    <view class='null-div'  wx:else>
+        <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fzanwushangpin.png'></image>
+        <text>购物车暂无商品快去挑选您喜欢的吧~</text>
+      </view>
+    <!-- 喜欢物品 -->
+    <!-- <view class='like-div'> -->
+        <!-- <view class='title'>猜你喜欢</view>
+        <view class='items'>
+            <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/lequhuwai/images/indexbj1.jpg'></image>
+            <view class='content'>
+                <view class='name overflow2'>日本尤佳妮儿童纸尿裤柔 软贴身婴儿可用</view>
+                <text class='money'>￥98</text>
+            </view>
+        </view>
+        <view class='items'>
+          <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/lequhuwai/images/indexbj1.jpg'></image>
+          <view class='content'>
+              <view class='name overflow2'>日本尤佳妮儿童纸尿裤柔 软贴身婴儿可用</view>
+              <text class='money'>￥98</text>
+          </view>
+      </view>
+        <view class='items'>
+            <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/lequhuwai/images/indexbj1.jpg'></image>
+            <view class='content'>
+                <view class='name overflow2'>日本尤佳妮儿童纸尿裤柔 软贴身婴儿可用</view>
+                <text class='money'>￥98</text>
+            </view>
+        </view>
+      </view> -->
+    <!-- 底部结算按钮 -->
+   
+  <view class='footer flex-row'>
+    <view class='col-25 text-center'>
+      <view catchtap='selectAlls'>
+        <image hidden='{{selectAll}}' class='icon2' src='../images/xz_icon.png'></image>
+        <image hidden='{{!selectAll}}' class='icon2' src='../images/wxz.png'></image>
+        <text>全选</text>
+      </view>
+    </view>
+    <view class='col-40 text-center'>
+      合计：
+      <text class='price2'>￥{{totalPic}}</text> 
+      <!-- (不含运费) -->
+    </view>
+    <view class='btn-f'>
+      <button class='btn_footer' bindtap='payClick'>去结算</button>
+    </view>
+  </view>
+</view>
+<footer tabIndex="{{tabIndex}}"></footer>

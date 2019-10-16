@@ -1,0 +1,17 @@
+  <view class='container'>
+      <!-- <view class='head-div'>
+          <text class='titleText'>客服</text>
+      </view> -->
+      <view class='content'>
+          <view class='qr-code'>
+              <image mode='widthFix' src='{{pic}}' class='code' data-url='{{pic}}'  bindtap='preview'></image>
+          </view>
+          <view class='tip'>
+              可扫描二维码添加客服微信或打客服电话进行反馈                
+          </view>
+          <view class='call'>
+              联系电话：              
+              <view catchtap='call' data-reply-phone='phone'>{{phone}}</view>
+          </view>
+      </view>
+  </view>

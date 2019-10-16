@@ -1,0 +1,92 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>申请售后</text>
+    </view> -->
+    <view class='wrap'>
+        <view class='head-top'>
+          <image src='' class='ver-T'></image>
+          <view class='content ver-T'>
+              <view class='title overflow'>5454554554</view>
+              <text>规格：2122</text>
+          </view>
+        </view>
+        <view class='box'>
+            <rich-text nodes="{{content}}"></rich-text>
+        </view>
+        <view class='flex-row item'>
+            <view class='col-30'>
+              申请售后方式
+            </view>
+            <view class='col-70 text-right next mode'>
+              <picker range="{{mode}}" bindchange="bindRegionChange" value="{{index}}">
+                <view class="picker">
+                  {{mode[index]}}
+                </view>
+              </picker>
+            </view>
+        </view>
+        <view class='flex-row item '>
+            <view class='col-30'>
+              售后原因
+            </view>
+            <view class='col-70 text-right reason next'>
+              <picker range="{{reason}}" bindchange="bindModeChange" value="{{item}}">
+                <view class="picker">
+                  {{reason[item]}}
+                </view>
+              </picker>
+            </view>
+        </view>
+        <view class='flex-row item'>
+            <view class='col-40'>
+              退款现金(最多￥0)
+            </view>
+            <view class='col-60 text-right'>
+              <input type='number' bindinput='setMoney' value='{{money}}' placeholder='请输入退款金额'></input>
+            </view>
+        </view>
+        <view class='flex-row item'>
+            <view class='col-30'>
+              退款脸金
+            </view>
+             <text class='red col-70 text-right'>0</text>
+        </view>
+        <view class='flex-row item'>
+            <view class='col-30'>
+              退款额度
+            </view>
+            <text class='red col-70 text-right'>0</text>
+        </view>
+        <view class='flex-row item'>
+            <view class='col-30'>
+              退款授信额度
+            </view>
+            <text class='red col-70 text-right'>0</text>
+        </view>
+        <view class='item' style='height:auto!important'>
+            <view class='col-95'>
+             退款说明
+            </view>
+            <view class='col-95 text-left'>
+              <textarea  type='text' placeholder='未填写'></textarea>
+            </view>
+        </view>
+         <view class='item add-pic' style='height:auto!important'>
+            <view class='col-30'>
+             上传凭证
+            </view>
+            <view class='img-wrap'>
+                <view class='img-items'>
+                  <image class='ver-T' src='{{pic}}'  wx:if="{{'' != pic}}"></image>
+                  <icon></icon>
+                </view>
+                <view class='ver-T add-img' bindtap="uploadPic" wx:if="{{pic.length <= 6}}"></view>
+            </view>
+          </view>
+    </view>
+    <view class='submit'>
+        保存
+    </view>
+</view>
+
+	

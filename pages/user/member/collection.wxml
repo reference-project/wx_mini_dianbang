@@ -1,0 +1,24 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>我的收藏</text>
+    </view> -->
+    <view class='wrap' wx:if="{{list.length > 0}}">
+        <view class='items' wx:for='{{list}}' wx:key="{{key}}" >
+        <view  wx:key='id' data-id="{{item.id}}"  data-activityId="{{item.activityId}}"  bindtap='goDetails'>
+            <image src='{{item.firstPicFullPath}}'></image>
+            <view class='content'>
+              <view class='name overflow2'>{{item.name}}
+              </view>
+              <view class='money'>￥{{item.priceSale}}<text>￥{{item.price}}</text>
+                <image class='del' catchtap='del' data-id="{{item.id}}" data-key="{{key}}"src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fcar_del_icon.png'></image>
+                <view class='clean'></view>
+              </view>
+            </view>
+        </view>
+        </view>
+    </view>
+    <view class='null-div' wx:else>
+        <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fzanwushangpin.png'></image>
+        <text>暂无收藏的商品~</text>
+    </view>
+</view>

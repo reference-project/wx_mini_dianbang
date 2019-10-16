@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "footer": "../../component/footer/footer"
+  },
+  "navigationBarTitleText": "个人中心"
+}

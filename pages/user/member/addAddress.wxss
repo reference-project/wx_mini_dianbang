@@ -1,0 +1,88 @@
+page{
+  background-color: #F3F4F6;
+}
+.head-div{
+  height: 130rpx;
+  text-align: center;
+  background: #ffffff;
+  width: 100%;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrapper{
+  width: 100%;
+  background: #FFFFFF;
+
+}
+
+.item{
+  color: #323232;
+  margin: 0 25rpx; 
+  font-size: 28rpx; 
+  line-height: 106rpx;
+  background: #FFFFFF;
+  border-bottom: 1rpx solid #e1e1e1;
+  text-align: left;
+  height: 106rpx;
+  position: relative;
+}
+.item:last-child{
+  border-bottom: none;
+}
+.item view{
+  width: 100%;
+}
+.item .adresss{
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fjr_copy.png)no-repeat right;
+  background-size: 13rpx 21rpx;
+}
+.item input{
+  line-height:106rpx;
+  height: 100%;
+  
+}
+.item input::placeholder{
+  color: #B4B4B4;
+  font-size: 28rpx;
+}
+
+.btn-wrapper{
+   position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background:#FBCB67;
+  color: #4F2D1A;
+  text-align: center;
+  font-size: 32rpx;
+}
+.col-50{
+  color: #909090;
+  font-size: 28rpx;
+  width: 50%!important;
+}
+.defAddress{
+  width: 104rpx!important;
+  height: 65rpx;
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fno_icon.png')no-repeat center;
+  background-size: 104rpx 65rpx;
+  /* float: right;
+  display: flex; */
+  right: 0;
+  position: absolute;
+  top:24rpx;
+}
+.defAddress.on{
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fyes_icon%20.png')no-repeat center;
+  background-size: 104rpx 65rpx;
+}
+
+
+

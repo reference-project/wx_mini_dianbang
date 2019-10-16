@@ -1,0 +1,140 @@
+page{
+  background-color: #ffffff;
+  text-align: center;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  height: 128rpx;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  margin-left: 42rpx;
+  height: calc(100% - 120rpx);
+  border-left: 1rpx solid rgb(225, 225, 225);
+  background: #ffffff;
+}
+.wrap .default{
+  padding-left: 37rpx;
+  padding-top: 20rpx;
+  height: 100%;
+  box-sizing: border-box;
+  margin-bottom: 120rpx;
+}
+.wrap .default .items{
+  border: 2rpx solid #e5e5e5;
+  border-radius: 10rpx;
+  width: 620rpx;
+  margin-bottom: 0;
+  position: relative;
+}
+.wrap .default .items::before{
+  content: "";
+  border-radius: 50px;
+  position: absolute;
+  width: 25rpx;
+  height: 25rpx;
+  left: -51rpx;
+  top: 53rpx;
+  background-color: #fbcb67;
+}
+.wrap .default .items .head{
+  min-height: 138rpx;
+  width: 620rpx;
+  font-size: 0rpx;
+}
+.wrap .default .items .head image{
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50rpx;
+  margin: 26rpx 22rpx 0;
+}
+.wrap .default .items .head .main-left{
+  width: 490rpx;
+  text-align: left;
+}
+.wrap .default .items .head .main-left .title{
+  line-height: 42rpx;
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 23rpx;
+  font-weight: normal;
+  display: inline-block;
+}
+.wrap .default .items .head .main-left .time{
+  line-height: 42rpx;
+  color: #909090;
+  font-size: 28rpx;
+  padding-bottom: 1rpx;
+  display: inline-block;
+}
+.wrap .default .items .aftermarket-content{
+  padding: 15rpx 0;
+  border-top: 2rpx solid #e5e5e5;
+}
+.aftermarket-content .aftermarket-content-items .refund{
+  padding-left: 60rpx;
+  position: relative;
+  line-height: 52rpx;
+  color: #909090;
+  font-size: 28rpx;
+  text-align: left;
+}
+.aftermarket-content .aftermarket-content-items .refund::before{
+  content: "";
+  width: 11rpx;
+  height: 11rpx;
+  border-radius: 50rpx;
+  background-color: #d1d1d1;
+  position: absolute;
+  left: 17rpx;
+  top: 20rpx;
+}
+.aftermarket-content .aftermarket-content-items .refund .img-wrap{
+      margin-top: 8rpx;
+}
+.aftermarket-content .aftermarket-content-items .refund .img-wrap image{
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+.btn-wrap{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 108rpx;
+  width: 100%;
+  text-align: right;
+  background-color: #fff;
+  box-shadow: 0rpx 0rpx 10rpx 0rpx rgba(0,0,0,0.2);
+}
+.btn-wrap span{
+  padding: 0 23rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  border: .02rem solid #E5E5E5;
+  border-radius: 10rpx;
+  text-align: center;
+  color: #333;
+  margin: 25rpx 33rpx 0 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 28rpx;
+}
+.btn-wrap span.red{
+  background-color: #fbcb67;
+  color: #4f2d1a;
+}

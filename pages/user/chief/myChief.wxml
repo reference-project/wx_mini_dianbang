@@ -1,0 +1,37 @@
+<view class='container'>
+    <view class='head-div'>
+        <!-- <text class='titleText'>我的团长</text> -->
+        <view class='text'>
+            <text class='tz'>团长</text>
+            团队总人数：<text>{{totalNumber}}</text>
+        </view>
+        <view class='text1'>
+            直推团长人数：<text>{{directNumber}}</text>
+        </view>
+        <view class='clear'></view>
+    </view>
+    <view class='wrap'>
+        <view class='items' wx:for="{{list}}"  wx:key="id"  data-id="{{item.id}}">
+          <image src='{{item.pic}}'></image>
+          <view class='content'>
+            <view class='name'>{{item.name}}({{item.blockName}})</view>
+            <view class='money'>
+            订单金额：<text>{{item.totalPrice}}</text>
+            佣金金额：<text>{{item.totalIncome}}</text>
+            </view>
+            <view class='time'>绑定时间：<text>{{item.createTimeStr}}</text> </view>
+          </view>
+         </view>
+    </view>
+    <view class='btn-box' bindtap='showPopup'>
+    邀请团长
+    </view>
+    <!-- 邀请二维码 -->
+    <view class='cover' hidden='{{popup}}' bindtap='hidePopup'></view>
+        <view class='qr-show' hidden='{{popup}}' bindtap='hidePopup'>
+          <image mode='widthFix' src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fdjysj_fx.png'></image>
+           <!-- catchtap='preview' data-url='http://zhishan-test.oss-cn-beijing.aliyuncs.com/lequhuwai/images/Parrot.jpg'> -->
+           <!-- <text class='save'>长按保存图片</text> -->
+      </view>
+   
+</view>

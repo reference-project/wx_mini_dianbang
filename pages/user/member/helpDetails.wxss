@@ -1,0 +1,41 @@
+.container{
+  height: 100vh;
+  background: #FFFFFF;
+}
+.head-div{
+  text-align: center;
+  width: 100%;
+  position: relative;
+  background: #FFFFFF;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.title{
+  background-color: #f3f4f6;
+  border-bottom: 2rpx solid #f1f1f1;
+  line-height: 97rpx;
+  padding: 0 28rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  width: calc(100% - 56rpx);
+  text-align: left;
+}
+.wrap{
+  padding: 20rpx 30rpx;
+  background: #FFFFFF;
+  text-align: left;
+  width: calc(100% - 60rpx)
+}
+/* .wrap  {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+} */

@@ -1,0 +1,87 @@
+ <view class='container'>
+    <view class='head-div'>
+        <view class='style dfk' wx:if="{{order.state == 10}}">待付款</view>
+        <view class='style dfh' wx:if="{{order.state == 20}}">待发货</view>
+        <view class='style psz' wx:if="{{order.state == 30}}">配送中</view>
+        <view class='style dth' wx:if="{{order.state == 35}}">待提货</view>
+        <view class='style ywc' wx:if="{{order.state == 40}}">已完成</view>
+        <view class='style ygb' wx:if="{{order.state == 60}}">已关闭</view>
+        <view class='style ygb' wx:if="{{order.state == 70}}">已取消</view>
+    </view>
+    <!-- <view style='margin-top: 221rpx; width:100%'> -->
+      <view class='pending' wx:if="{{order.state == 35}}">
+          <image src='{{order.obtainCodePic}}'></image>
+          <view class='title'>提货码：{{order.obtainCode}}</view>
+      </view>
+    <!-- 用户信息 -->
+      <view class='information' > 
+          <view class='community' >
+              社区信息
+              <text>自提点</text>
+                  <view class='sqName'>{{credo.blockName}} {{credo.address}}</view>
+                  <view class='adress'>{{credo.province}}{{credo.city}}{{credo.area}} {{credo.address}}</view>
+                  <view class='user'>{{credo.name}} {{credo.phone}}</view>
+          </view>
+          <view class='receiver'>
+              收货人信息
+              <view class='phone'>{{order.receiveName}}  {{order.receivePhone}}</view>
+          </view>   
+      </view>
+    <!-- </view> -->
+    <!-- 商品信息 -->
+    <view class='wrap'>
+        <view class='items' wx:for="{{list}}" bindtap='goProduct'  data-activityId="{{item.activityId}}" data-productId="{{item.productId}}" data-index="{{index}}" wx:key="id" data-id="{{item.id}}">
+            <image class='icon' src='{{item.productPic}}'></image>
+            <view class='content'>
+                <view class='name'>
+                    {{item.productName}}      
+                </view>
+                <text class='style'>{{item.optionStrs}}</text>
+                <view class='money'>￥{{item.price}}<text class='num'>X{{item.quantity}}</text>
+                <!--  <text class='btn' wx:if="{{order.state==20 || order.state==30 || order.state==35}}">退款</text> -->
+                      <text class='btn' wx:if="{{order.state==40}}" catchtap='goRefund'>申请售后</text>
+                      <view class='clear'></view>
+                </view>
+            </view>
+        </view>
+        <view class='total-box'>
+          <view class='total'>商品总价
+              <text>￥{{order.totalPrice}}</text>
+          </view>
+          <view class='total freight'>运费
+              <text>免运费</text>
+          </view>
+          <view class='payment'>实付款（含运费)
+              <text>￥{{order.payPrice}}</text>
+          </view>
+           <view class='payment'>脸金抵扣
+              <text>￥{{order.faceGold}}</text>
+          </view>
+           <view class='payment'>脸金额度抵扣
+              <text>￥{{order.faceGoldCredit}}</text>
+          </view>
+           <view class='payment'>授信脸金抵扣
+              <text>￥{{order.faceGoldFinance}}</text>
+          </view>
+        </view>
+    </view>
+    <!-- 订单信息 -->
+    <view class='order-box'>
+        <text>订单信息</text>
+        <view class='order'>订单编号：{{order.orderNumber}}
+          <label class='lab_copy' bindtap='copyBtn'>复制</label>
+        </view>
+        <view>创建时间：{{order.createTimeStr}}</view>
+        <view wx:if="{{order.state!= 10}}">付款时间：{{order.payTimeStr}}</view>
+        <view wx:if="{{order.state== 35 || order.state == 40}}">发货时间：{{order.sendTimeStr}}</view>
+        <view wx:if="{{order.state== 40}}">提货时间：{{order.confirmTimeStr}}</view>
+        <view wx:if="{{order.state== 70}}">关闭时间：{{order.createTimeStr}}</view>
+    </view>
+    <view class='btn-box' wx:if="{{order.state==10}}">
+      <text wx:if="{{order.state==10}}">取消订单</text>
+      <!-- <text wx:if="{{order.state==20}}">提醒发货</text>
+      <text wx:if="{{order.state==40 || order.state==70}}">删除订单</text> -->
+      <text class='yellow' wx:if="{{order.state==10}}">付款</text>
+      <!-- <text class='yellow' wx:if="{{order.state==40}}">评价</text> -->
+    </view>
+</view>

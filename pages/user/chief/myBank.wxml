@@ -1,0 +1,19 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>新增银行卡</text>
+    </view> -->
+    <view class='wrap' wx-if="{{userBank != 0}}" bindtap="gowithdraw">
+        <view class='bankCard'>
+            <view class='bank'>
+                <text>{{userBank.bankName}}</text>
+            </view>
+            <view class='number'>
+                {{userBank.bankNumberStr}}
+            </view>
+            <view class='triangle'><text>默认</text></view>
+        </view>
+    </view>
+    <view class="submit" bindtap="addBankCard" wx-if="{{userBank == 0}}">
+        <span>添加银行卡</span>
+    </view>
+</view>

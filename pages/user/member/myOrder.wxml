@@ -1,0 +1,44 @@
+<view class='container'>
+    <view class='head-div'>
+        <!-- <text class='titleText'>我的订单</text> -->
+        <scroll-view class="scroll-view_H" scroll-x style="width:100%">
+        <view data-state='0' class="scroll-view-item nav1 {{state=='0'?'on':''}}"  bindtap="navClick">全部</view>
+        <view data-state='10' class="scroll-view-item nav2 {{state==10?'on':''}}" bindtap="navClick">待付款</view>
+        <view data-state='20' class="scroll-view-item nav3 {{state==20?'on':''}}" bindtap="navClick">待发货</view>
+        <view data-state='30' class="scroll-view-item nav4 {{state==30?'on':''}}" bindtap="navClick">配送中</view>
+        <view data-state='35' class="scroll-view-item nav5 {{state==35?'on':''}}" bindtap="navClick">待提货</view>
+        <view data-state='40' class="scroll-view-item nav6 {{state==40?'on':''}}" bindtap="navClick">已完成</view>
+<!-- 
+            <view wx:for="{{tabList}}" wx:key="{{index}}" bindtap="switchTab" data-current="{{index}}" class="scroll-view-item {{currentTab==index ? 'on' : ''}}">{{item}}</view>    -->
+        </scroll-view>
+    </view>
+      <view class='wrap' >
+          <view class='items' bindtap='goDetails' data-credoId='{{item.credoId}}'  data-state="{{item.state}}" wx:for="{{list}}" wx:key='id' data-id="{{item.id}}">
+              <!-- <text class="style" wx:if="{{item.state==10}}">待付款</text>
+              <text class="style" wx:if="{{item.state==20}}">待发货</text>
+              <text class="style" wx:if="{{item.state==30}}">配送中</text>
+              <text class="style" wx:if="{{item.state==35}}">待提货</text>
+              <text class="style" wx:if="{{item.state==40}}">已完成</text> -->
+              <text class="style" wx:if="{{item.activityState!=20}}">{{item.stateName}}</text>
+              <text class='style'  wx:if="{{item.activityState==20}}">拼团失败</text>
+              <view class='user'>
+                  <image class='icon' src='{{item.pic}}'></image>
+                  团长：{{item.credoName}}
+                  <text>({{item.blockName}})</text>
+               </view>
+               <view class='content' wx:for="{{item.items}}">
+                  <image src='{{item.productPic}}'></image>
+                  <view class='right-div'>
+                      <view class='title'>{{item.productName}}</view>
+                      <view class='type'>{{item.optionStrs}}</view>
+                      <view class='money'>￥{{item.price}}<text>X{{item.quantity}}</text></view>
+                  </view>   
+               </view>
+                <text class='total'>共{{item.items.length}}种商品 合计:￥{{item.totalPrice}}</text>  
+                <view class="nav-btn" wx:if="{{item.state==10 || item.state==''}}">
+                    <button data-id="{{item.id}}" data-pay="{{item.payPrice}}" catchtap="payment">立即付款</button>
+                    <button class='cancel' catchtap='cancel'  data-id="{{item.id}}">取消订单</button>
+                </view>
+          </view>
+       </view>
+    </view>

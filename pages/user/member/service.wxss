@@ -1,0 +1,49 @@
+page{
+  background-color: #ffffff;
+  text-align: center;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  height: 128rpx;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.content{
+  padding: 120rpx 155rpx;
+  text-align: center;
+}
+.content .qr-code{
+  width: 440rpx;
+  height: 440rpx;
+  box-shadow:0px 3rpx 49rpx 0rpx rgba(0, 0, 0, 0.08); 
+}
+.content .qr-code image{
+  width: 370rpx;
+  height: 370rpx!important;
+  margin: 35rpx auto;
+}
+.tip{
+  margin-top: 35rpx;
+  color: #909090;
+  font-size: 32rpx;
+}
+.call{
+  color: #333333;
+  font-size: 28rpx;
+  margin-top: 90rpx;
+  font-weight:500;
+}
+.call view{
+  color: #F1A710;
+  font-size: 44rpx;
+}

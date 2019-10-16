@@ -1,0 +1,84 @@
+page{
+  background-color: #F5F5F5;
+}
+.head-div{
+  height: 130rpx;
+  text-align: center;
+  background: #ffffff;
+  width: 100%;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  margin-top: 20rpx;
+  width: 100%;
+  margin-bottom: 110rpx;
+}
+.wrap .items{
+  padding: 24rpx 24rpx 30rpx;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fgj_dw_icon.png)no-repeat center left 24rpx white;
+  background-size: 38rpx 50rpx;
+  width: calc(100% - 48rpx);
+  display: inline-block;
+  margin-bottom: 20rpx;
+}
+.wrap .items image{
+  width: 33rpx;
+  height: 34rpx;
+  float: right;
+}
+.wrap .items .name{
+  color: #323232;
+  font-size: 28rpx;
+  padding-left: 62rpx;
+}
+.wrap .items .name .phone{
+  color: #909090;
+  font-size: 26rpx;
+  margin-left: 5rpx;
+  margin-right: 37rpx;
+}
+.wrap .items .name .default{
+  width:72rpx;
+  height:30rpx;
+  background:rgba(255,255,255,1);
+  border:1rpx solid rgba(240,167,16,1);
+  border-radius:15rpx;
+  display: inline-block;
+  line-height: 30rpx;
+  color: #F0A710;
+  font-size: 22rpx;
+  text-align: center;
+  
+  }
+  .wrap .items .adress{
+    padding-left: 62rpx; 
+    width: 551rpx;
+    color: #323232;
+    font-size: 26rpx;
+    margin-top: 20rpx;
+    font-weight:500;
+  }
+  .btn-box{
+    margin-top: 65rpx;
+    width:100%;
+    height:90rpx;
+    background:rgba(251,203,103,1);
+    line-height: 90rpx;
+    text-align: center;
+    color: #4C2D19;
+    font-size: 32rpx; 
+    font-weight:500;
+    position: fixed;
+    bottom: 0;
+
+  }
+  .null-div{
+    margin-top: 250rpx;
+  }

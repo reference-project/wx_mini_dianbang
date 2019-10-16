@@ -1,0 +1,50 @@
+<view class='container'>
+    <view class='head-div'>
+        <!-- <text class='titleText'>选择团长</text> -->
+        <view class='current'>
+          当前位置
+        </view>
+        <view class='adress-box' bindtap='gobMap' type="primary">
+         {{blockName}}
+          <text class='modify' bindtap='gobMap'>
+            修改地址
+          </text>
+          <view class='clear'></view>
+        </view>
+    </view>
+    <view class='list-div' wx:if="{{lastCredoId != 0}}">
+      <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fjrsx_icon.png'></image>
+      <view class='content'>
+        <view class='name'>
+          {{credo.name}}
+          <text class='adress'>({{credo.blockName}})</text>
+          <text class='Identity'>团长</text>
+        </view>
+        <view class='num'>
+          {{credo.address}}
+        </view>
+        <view class='signature overflow'>
+          个性签名：{{credo.sign}}
+        </view>  
+      </view>
+    </view> 
+    <view class='wrap'>
+        <view class='nearby'>附近团长</view>
+        <view class='items' wx:for="{{items}}" data-index="{{index}}" wx:key="id" data-id="{{item.id}}" bindtap="modify">
+          <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fjrsx_icon.png'></image>
+            <view class='content'>
+              <view class='name'>
+                {{item.name}}
+                <text class='adress'>({{item.blockName}})</text>
+              </view>
+              <view class='num'>
+                {{item.address}}
+                <text>距离{{item.distance}}m</text>
+              </view>
+              <view class='signature overflow'>
+                个性签名：{{item.sign}}
+              </view> 
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,60 @@
+<view class='container'>
+    <view class='head-div'>
+        <view class='style'>社区自提商品由团长免费代收，到货后请到自提点取货</view>
+    </view>
+    <!-- 用户信息 -->
+    <view class='information'>
+        <view class='community'>
+            社区信息
+            <text>自提点</text>
+            <view class='sqName'>{{credo.blockName}} {{credo.address}}</view>
+            <view class='adress'>{{credo.province}}{{credo.city}}{{credo.area}} {{credo.address}}</view>
+            <view class='user'>{{credo.name}} {{credo.phone}}</view>
+        </view>
+        <view class='receiver' bindtap="goAddress">
+            收货人信息
+            <view class='phone' wx:if="{{defAddress != null}}">{{defAddress.name}}  {{defAddress.telephone}}</view>
+            <view class='phone' wx:if="{{defAddress == ''}}">请选择地址</view>
+        </view>   
+    </view>
+    <!-- 商品信息 -->
+    <view class='wrap'>
+        <view class='items' wx:for="{{list}}" data-index="{{index}}" wx:key="id" data-id="{{item.id}}">
+            <image class='icon' src='{{item.productPic}}'></image>
+            <view class='content'>
+                <view class='name'>
+                   {{item.productName}}      
+                </view>
+                <text class='style'>{{item.optionStrs == ''?'默认':item.optionStrs}}</text>
+                <view class='money'>￥{{item.price}}<text class='num'>X{{item.quantity}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='total-box'>
+          <view class='total'>商品总价
+              <text>￥{{totalPrice}}</text>
+          </view>
+          <view class='total freight'>运费
+              <text wx:if="{{freight == '0'}}">免运费</text>
+               <text wx:if="{{freight != '0'}}">{{freight}}</text>
+          </view>
+          <view class='payment'>实付款（含运费)
+              <text>￥{{totalPrice}}</text>
+          </view>
+           <view class='payment'>脸金抵扣
+              <text>￥{{faceGold}}</text>
+          </view>
+           <view class='payment'>脸金额度抵扣
+              <text>￥{{faceGoldCredit}}</text>
+          </view>
+           <view class='payment'>授信脸金抵扣
+              <text>￥{{faceGoldFinance}}</text>
+          </view>
+        </view>
+    </view>
+    <view class='btn-box'>
+        <text class='btn' bindtap="addOrder">立即支付</text>
+        <view class='pay'>应付款：<text>￥{{showTotalPrice}}</text></view>
+        
+    </view>
+</view>

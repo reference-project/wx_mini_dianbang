@@ -1,0 +1,170 @@
+page{
+  background-color: #F3F4F6;
+  text-align: center;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  height: 128rpx;
+  /* top: 0;
+  z-index: 2 */
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  /* margin-top: 128rpx; */
+  border-top: 1rpx solid #e1e1e1;
+}
+.wrap .head-top{
+  padding: 24rpx 30rpx;
+  background: #ffffff;
+  text-align: left;
+}
+.wrap .head-top image{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}
+.head-div .content{
+
+}
+.head-div .content .title{
+  line-height: 34rpx;
+  font-size: 28rpx;
+  color: #333;
+  width: 400rpx;
+  font-weight: normal;
+}
+.head-div .content>text{
+  line-height: 84rpx;
+  color: #909090;
+  font-size: 28rpx;
+}
+.wrap .box{
+  padding: 30rpx 80rpx 30rpx 75rpx;
+  color: #7f7f7f;
+  font-size: 28rpx;
+  line-height: 32rpx;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2F10.png) left 31rpx top 31rpx no-repeat;
+  background-size: 26rpx;
+  background-color: #f2f5f5;
+  text-align: left;
+}
+.wrap .item{
+  color:#323232;
+  padding:0 25rpx;
+  font-size:28rpx;
+  line-height:106rpx;
+  background:#FFFFFF;
+  border-bottom:1rpx solid #e1e1e1;
+  text-align:left;
+  height:106rpx;
+}
+.item input{
+  text-align: right;
+  border: none;
+  height: 106rpx;
+  padding: 0;
+  color: #C13028;
+  line-height: 1;
+}
+.item view{
+  height: 106rpx;
+}
+.col-30{
+  color:#909090;
+  font-size:26rpx;
+}
+.col-40{
+  color:#909090;
+  font-size:26rpx;
+}
+.col-100{
+  color:#909090;
+  font-size:26rpx;
+}
+.wrap .item .next{
+  background:url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fjr_copy.png)no-repeat right;
+  background-size:13rpx 21rpx;
+}
+.wrap .item .red{
+  float: right;
+  color: #C13028;
+  font-size: 28rpx;
+}
+picker{
+  margin-right: 24rpx;
+}
+textarea{
+    line-height: 1.4;
+    border: none;
+    height: 100%;
+    padding: 0;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: 28rpx;
+}
+/* 上传凭证 */
+.img-wrap{
+  position: relative;
+  margin-top: -15rpx;
+}
+.img-wrap .img-items{
+  	width: 110rpx;
+		height: 110rpx;
+		margin-right: 28rpx;
+		margin-bottom: 20rpx;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+}
+.img-wrap .img-items icon{
+  	position: absolute;
+		right: -15rpx;
+		top: -15rpx;
+		height: 40rpx;
+		width: 40rpx;
+		background:url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2F63.png) center no-repeat;
+		background-size: 40rpx;
+		opacity: .7;
+}
+.img-wrap .img-items:nth-child(5n){
+		margin-right: 0;
+}
+.img-wrap .img-items image{
+  width: 100%;
+	height: 100%;
+}
+.img-wrap .add-img{
+  	width: 110rpx;
+		height: 110rpx;
+		background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2F64.png) center no-repeat;
+		background-size: 110rpx;
+		display: inline-block;
+		border: 2rpx solid #e6e6e6;
+}
+.add-pic{
+  padding-bottom: 25rpx!important;
+  margin-bottom: 90rpx;
+}
+.submit{
+  line-height: 90rpx;
+  background-color: #fbcb67;
+  text-align: center;
+  color: #4f2d1a;
+  font-size: 28rpx;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}

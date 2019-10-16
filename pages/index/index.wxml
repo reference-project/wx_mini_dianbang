@@ -1,0 +1,93 @@
+<view class='container'>
+    <view class='head-div'>
+        <!-- <text class='titleText'>首页</text> -->
+        <text class='search-btn'>搜索</text>
+        <view class='search-box'>
+            <input placeholder='搜索关键字'  placeholder-style="color:#909090;"></input>
+        </view>
+    </view>
+	
+    <view class='user-box'>
+        <image src='{{credo.pic}}'></image>
+        <view class='content' bindtap='goSelect'>
+            <view class='name'>{{credo.name}}
+                <text class='address'>({{credo.blockName}})</text>
+                <text class='mark'>团长</text>
+            </view>
+            <view class='num'>{{credo.address}}</view>
+            <view class='signature overflow'>个性签名：{{credo.sign}}</view>
+        </view>
+    </view>
+	
+    <view class='list-box'>
+        <image src='{{ad}}'></image>
+        <view class='bottom'>
+          <text class='xsms'>限时秒杀</text>
+          <text class='jrsx'>今日上新</text>
+          <text class='bkzj'>爆款直降</text>
+        </view>
+    </view>
+	<view style='width:100%; margin-bottom:100rpx'>
+    <view class='wrap' wx:if="{{flag == 1 || flag == 2}}" wx:if="{{items.length>0}}">
+        <view class='top-box'>
+           <view class='title'>团购商品</view> 
+           <view class='end'>
+              距离结束
+              <text class='time'>{{limitTime}}</text> 
+              <!-- <text class='time'>52</text> :
+              <text class='time'>24</text> -->
+              <text class='line'>|</text>消费够{{activity.grouponPrice}}即可成团
+           </view>
+        </view>
+		
+        <view class='items' bindtap='goDetails' data-activity="{{activity.id}}" wx:for="{{items}}" data-index="{{index}}" wx:key="id" data-id="{{item.id}}">
+            <image src='{{item.firstPicFullPath}}'></image>
+            <view class='content'>
+                <view class='name overflow2'>
+                    {{item.name}}
+                </view>
+                <view class='money'>￥{{item.priceSale}}
+                  <text>￥{{item.markingPrice}}</text>
+                  <icon></icon>
+                </view>
+            </view>
+        </view>
+    </view>
+	
+    <view class='wrap' wx:if="{{flag == 2}}"  wx:if="{{items2.length > 0}}">
+        <view class='top-box'>
+           <view class='title'>团购商品</view> 
+           <view class='end'>
+              距离结束
+              <text class='time'>{{limitTime1}}</text> 
+              <!-- <text class='time'>52</text> 
+              <text class='time'>24</text> -->
+              <text class='line'>|</text>消费够{{activity2.grouponPrice}}即可成团
+           </view>
+        </view>
+		
+        <view class='items' bindtap='goDetails' data-activity="{{activity2.id}}" wx:for="{{items2}}" data-index="{{index}}" wx:key="id" data-id="{{item.id}}">
+            <image src='{{item.firstPicFullPath}}'></image>
+            <view class='content'>
+                <view class='name overflow2'>
+                    {{item.name}}
+                </view>
+                <view class='money'>￥{{item.priceSale}}
+                  <text>￥{{item.markingPrice}}</text>
+                  <icon catchtap='goCar'></icon>
+                </view>
+            </view>
+          </view>
+      </view>
+    </view>
+    <view class='null-div'  wx:if="{{flag!= 2 && flag!=1}}" >
+      <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fzanwushangpin.png'></image>
+      <text>当前团长还未开启团购哦~</text>
+    </view>
+	
+    <view class='float' hidden='{{popup}}' >
+      <button class='share'></button>
+      <button class='top' bindtap='goScrolltop'></button>
+    </view>
+<footer tabIndex="{{tabIndex}}"></footer>
+</view>

@@ -1,0 +1,25 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>团购活动</text>
+    </view> -->
+    <view class='wrap'>
+        <view class='items' wx:for='{{list}}' wx:key="id"   data-id="{{item.id}}" data-credoId="{{item.credoId}}" bindtap='goDetails'>
+            <view class='title'>
+                <text class='type-red' wx:if="{{item.credoState==5}}">已开团</text>
+                <text class='type gay' wx:if="{{item.credoState==20}}">开团失败</text>
+                <text class='type red' wx:if="{{item.credoState==10}}">开团成功</text>
+                {{item.name}}
+                <!-- <text class='total'>共105件商品 ></text> -->
+            </view>
+            <view class='Request' wx:if="{{item.credoState==20}}">消费不满{{item.grouponPrice}}元<text>|</text>参团人数不满{{item.grouponNumber}},未达到参团条件</view>
+            <view class='Request' wx:if="{{item.credoState==10 || item.credoState==5}}">已参团{{item.number}}人，共计消费{{item.money}}元</view>
+            <view class='start' wx:if="{{item.state==2}}">活动已结束<text>|</text>消费够{{item.grouponPrice}}元 且 参团人数达到{{item.grouponNumber}}人即可成团</view>
+            <view class='start' wx:if="{{item.state==0}}">活动未开始<text>|</text>消费够{{item.grouponPrice}}元 且 参团人数达到{{item.grouponNumber}}人即可成团</view>
+            <view class='start' wx:if="{{item.state==1}}">活动进行中<text>|</text>消费够{{item.grouponPrice}}元 且 参团人数达到{{item.grouponNumber}}人即可成团</view>
+            <view class='time'>活动时间：{{item.beginTimeStr}} - {{item.endTimeStr}}</view>
+            <image wx:if="{{item.pic.length > 0}}"  src='{{item.pic}}'></image>
+            <text class='prompt'  wx:if="{{item.credoState==10 && item.sendObtain==0}}" wx:key="id" data-id="{{item.id}}" data-credoId="{{item.credoId}}" catchtap='notification'>通知提货</text>
+            <view class='clear'></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>常见问题</text>
+    </view> -->
+    <view class='title'>{{article.title}}</view>
+    <view class='wrap'>
+        <rich-text nodes="{{article.content}}"></rich-text>
+    </view>
+</view>

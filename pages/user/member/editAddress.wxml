@@ -1,0 +1,54 @@
+<view class='container'>
+	<!-- <view class='head-div'>
+		<text class='titleText'>编辑地址</text>
+	</view> -->
+	
+	<view class='wrapper'>
+		<view class='flex-row item'>
+			<view class='col-100  text-left'>
+				<input bindinput='setName' value='{{name}}' placeholder='收货人姓名'></input>
+			</view>
+		</view>
+		
+		<view class='flex-row item'>
+			<view class='text-left'>
+				<input type='number' bindinput='setPhone' value='{{telephone}}' placeholder='收货人电话'></input>
+			</view>
+		</view>
+		
+		<view class='flex-row item'>
+			<view class='adresss text-left'>
+				<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+					<view class="picker">
+						{{region[0]}}{{region[1]}}{{region[2]}}
+					</view>
+				</picker>
+			</view>
+		</view>
+		
+		<view class='flex-row item'>
+			<view class='text-left'>
+				<input bindinput='setAddress' placeholder='详细地址' value='{{address}}'></input>
+			</view>
+		</view>
+		
+		<view class='item'>
+			<view class='col-50 text-left'>
+				设为默认地址
+			</view>
+			<!-- <switch checked bindchange="switch1Change"/> -->
+      <view class='defAddress' wx:if="{{isCollect==false || defAddress ==0}}"  bindtap='goClick'></view>
+      <view class='defAddress on' wx:if="{{isCollect==true || defAddress ==1}}" bindtap='goClick'></view>
+      <view class='clear'></view>
+		</view>
+	</view>
+	
+	<view class='btn-wrapper'>
+		  <button class='col-50 del' bindtap='del' data-address='{{address.id}}' >
+          删除
+      </button>
+      <button class='col-50 save'  bindtap='editAddress'>
+        保存
+      </button>
+	</view>
+</view>

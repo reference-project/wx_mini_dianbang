@@ -1,0 +1,58 @@
+.footerOnly{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #fff;
+		z-index: 111;
+		height: 100rpx;
+		box-shadow:4rpx -6rpx 6rpx #e4e8f1;
+	}
+	.footerOnly>view{
+		width: 33.3%;
+		background-position: center top 14rpx ;
+		background-repeat: no-repeat;
+		background-size: 68rpx;
+		height: 100rpx;
+		text-align: center;
+		box-sizing: border-box;
+		font-size: 24rpx;
+		color: #808080;
+	}
+  
+.ver-T{
+  display: inline-block;
+  vertical-align: top;
+}
+.ver-B{
+  display: inline-block;
+  vertical-align: bottom;
+}
+.ver-M{
+  display: inline-block;
+  vertical-align: middle;
+}
+	.footerOnly>view:nth-child(1){
+		background-image: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffooter_home_normal.png');
+		background-size: 50rpx 75rpx;
+	}
+	.footerOnly>view:nth-child(2){
+		background-image: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffooter_sc1_icon.png);
+		background-size: 58rpx 72rpx;
+	}
+	.footerOnly>view:nth-child(3){
+	   background-image: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffooter_my_normal.png);
+	  	background-size: 44rpx 72rpx;
+ 
+	}
+	.footerOnly>view:nth-child(1).on{
+				background-image: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffooter_home_pressed_icon.png);
+	}
+	.footerOnly>view:nth-child(2).on{
+				background-image: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffooter_sc2_icon%20.png');
+	}
+	.footerOnly>view:nth-child(3).on{
+       background-image: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ffooter_my_pressed.png')
+	}
+
+

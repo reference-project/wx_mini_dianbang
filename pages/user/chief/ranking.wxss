@@ -1,0 +1,158 @@
+
+.container {
+ height: 100%;
+}
+.head-div{
+  height: 375rpx;
+  width: 100%;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ftz_bg_icon.png)no-repeat center;
+  background-size: 100% 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 2
+}
+.head-div .titleText{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.head-div .img-div{
+  width: 260rpx;
+  height: 190rpx;
+  text-align: center;
+  margin: 28rpx auto 0;
+  position: relative;
+}
+.head-div .img-div .icon{
+    width: 260rpx;
+    height: 190rpx;
+    background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Ftz_tx_icon.png)no-repeat center;
+    background-size: 100% 100%;
+    z-index: 2;
+    position: relative;
+}
+.head-div .img-div .icon>text{
+  color: #4F2D1A;
+  font-size: 28rpx;
+  font-weight:bold;
+  position: absolute;
+  bottom: 10rpx;
+  left: 85rpx;
+}
+.head-div .img-div image{
+  width: 138rpx;
+  height: 138rpx;
+  border:4px solid rgba(253, 214, 48, 1);
+  border-radius:50%;
+  position: relative;
+  top: -160rpx;
+  /* right: 5rpx; */
+}
+.head-div .name{
+  color: #FFFFFF;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.head-div .nav-btn{
+  width: 100%;
+  margin-top: 28rpx;
+  text-align: center;
+}
+.head-div .nav-btn text{
+  width: 49.5%;
+  border-right: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 28rpx;
+  display: inline-block;
+  height: 27rpx;
+  line-height: 27rpx;
+  vertical-align: top;
+}
+.head-div .nav-btn text:last-child{
+  border-right: none;
+}
+.wrap{
+  padding: 30rpx 0 0 0;
+  display: inline-block;
+  width: 100%;
+  margin-top:375rpx;
+
+}
+.wrap .items{
+  width:calc(100%-116rpx);
+  margin-left: 116rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #E1E1E1;
+  margin-bottom: 30rpx;
+  position: relative;
+}
+.wrap .items:last-child{
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.wrap .items .num{
+  position: absolute;
+  left: -66rpx;
+  top: 30rpx;
+  color: #333333;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.wrap .items image{
+  width: 98rpx;
+  height: 98rpx;
+  vertical-align: top;
+ margin-right: 28rpx;
+}
+.wrap .items .content{
+  text-align: left;
+  display: inline-block;
+}
+.wrap .items .content .name{
+  color: #333333;
+  font-size: 28rpx;
+  font-weight:500;
+  margin-bottom: 28rpx;
+  margin-top: 9rpx;
+}
+.wrap .items .content .sales{
+  color: #909090;
+  font-size: 26rpx;
+  vertical-align: top;
+}
+.wrap .items .content .sales text{
+  color: #FF0000;
+}
+.wrap .items .content .brokerage{
+  margin-top: 16rpx;
+}
+.fixed{
+  box-shadow:0px 3px 24px 0px rgba(0, 0, 0, 0.27);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.fixed .items image text{
+  width:106rpx;
+  height:31rpx;
+  background:rgba(251,203,103,1);
+  border-radius:16rpx;
+  color: #622E02;
+  font-size: 22rpx;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  margin-left:-4rpx;
+  top:81rpx;
+
+}
+.fixed .items{
+  margin: 23rpx 0 23rpx 116rpx;
+  padding: 0;
+  border-bottom: 0;
+}

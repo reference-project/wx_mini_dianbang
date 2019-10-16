@@ -1,0 +1,140 @@
+.container {
+ height: 100%;
+
+}
+.head-div{
+  height: 105rpx;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  box-shadow:0px 8px 9px 0px rgba(0, 0, 0, 0.05);
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.head-div .text{
+ position: absolute;
+ left: 38rpx;
+ bottom: 36rpx;
+ color: #333333;
+ font-size: 28rpx;
+}
+.head-div .text1{
+  position: absolute;
+  right: 38rpx;
+  bottom: 36rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+.head-div .text1 text{
+  color: #FF0000;
+  font-size: 28rpx;
+}
+.head-div .text .tz{
+  width: 70rpx;
+  height: 37rpx;
+  background: #FBCB67;
+  line-height: 37rpx;
+  display: inline-block;
+  border-radius: 10rpx;
+  color: #622E02;
+  font-size: 26rxp;
+}
+.head-div .text text{
+  color: #FF0000;
+  font-size: 28rpx;
+}
+.wrap{
+  padding: 30rpx 24rpx;
+  margin-bottom: 90rpx;
+  width: calc(100% - 48rpx);
+ 
+}
+.wrap .items{
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx
+}
+.wrap .items:last-child{
+  border-bottom: none;
+}
+.wrap .items image{
+  width: 98rpx;
+  height: 98rpx;
+  vertical-align: top;
+  margin-right: 28rpx;
+}
+.wrap .items .content{
+  display: inline-block;
+  text-align: left;
+  width: calc(100% - 126rpx);
+  vertical-align: top;
+}
+.wrap .items .content .name{
+  color: #333333;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+
+}
+.wrap .items .content .money{
+  color: #909090;
+  font-size: 26rpx;
+  font-weight:500;
+  margin-bottom: 10rpx;
+}
+.wrap .items .content .money text{
+  color: #FF0000;
+  font-size: 26rpx;
+  margin-right: 17rpx;
+}
+.wrap .items .content .time{
+  color: #909090;
+  font-size: 26rpx;
+}
+.wrap .items .content .time text{
+  color: #333333;
+}
+.btn-box{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background:#FBCB67;
+  color: #4F2D1A;
+  text-align: center;
+  font-size: 32rpx;
+}
+/* 弹窗 */
+.qr-show{
+  height: 876rpx;
+  width: 654rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  z-index: 112;
+  position: fixed;
+  top: 226rpx;
+}
+.qr-show image{
+  width: 100%;
+}
+.save{
+  text-align: center;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fbc_tk.png)no-repeat center right;
+  background-size: 30rpx 24rpx;
+  color: #FFFFFF;
+  font-size: 28rpx;
+  font-weight:500;
+  padding-right: 45rpx;
+  position: relative;
+  top: 15rpx;
+}

@@ -1,0 +1,41 @@
+<view class='container'>
+    <view class='head-div'  wx:if='{{rankList[0]}}' >
+        <!-- <text class='titleText'>团长排行</text> -->
+        <view class='img-div'>
+          <view class='icon'>
+          <text>第一名</text>
+          </view>
+           <image src='{{rankList[0].pic}}'></image>
+        </view> 
+        <view class='name'>{{rankList[0].name}}（{{rankList[0].address}}）</view>
+        <view class='nav-btn'>
+          <text>累计销售金额：{{rankList[0].totalPrice}}</text>
+          <text>累计佣金金额：{{rankList[0].totalIncome}}</text>
+        </view>
+    </view>
+    <view class='wrap'  wx:if="{{rankList!= 0}}">
+        <view class='items' wx:for='{{rankList}}' wx:key='{{index}}' wx:if='{{index > 0}}'>
+          <text class='num'>{{index+1}}</text>
+          <image src='{{item.pic}}'></image>
+          <view class='content'>
+            <view class='name'>{{item.name}}（{{item.address}}）</view> 
+            <view class='sales'>累计销售金额：<text>{{item.totalPrice}}</text></view>
+            <view class='brokerage sales'>累计佣金金额：<text>{{item.totalIncome}}</text></view>
+          </view>
+        </view>
+    <!-- 我的排名 -->
+    <!-- <view class='fixed'>
+        <view class='items'>
+          <text class='num'>3</text>
+          <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fjrsx_icon.png'>
+          <text>我的排行</text>
+          </image>
+          <view class='content'>
+            <view class='name'>张晓薇（新苑社区）</view> 
+            <view class='sales'>累计销售金额：<text>20.5w</text></view>
+            <view class='brokerage sales'>累计佣金金额：<text>10.1w</text></view>
+          </view>
+        </view>
+    </view> -->
+    </view>
+</view>

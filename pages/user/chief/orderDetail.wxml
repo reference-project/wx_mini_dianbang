@@ -1,0 +1,71 @@
+<view class='container'>
+    <view class='head-div'>
+      <view class='style dfh'  wx:if="{{order.state == 20}}">待发货</view>
+      <view class='style'  wx:if="{{order.state == 30}}">待收货</view>
+      <view class='style dth'  wx:if="{{order.state == 35}}">待提货</view>
+      <view class='style ywc' wx:if="{{order.state == 40}}">已完成</view>
+    </view>
+    <!-- 用户信息 -->
+    <view class='information'>
+        <view class='community'>
+            社区信息
+            <text>自提点</text>
+            <view class='sqName'>{{order.credo.blockName}}</view>
+            <view class='adress'>{{order.credo.province + order.credo.city + order.credo.area + order.credo.blockName}}</view>
+            <view class='user'>团长：{{order.credo.name}}   {{order.credo.phone}}</view>
+        </view>
+        <view class='receiver'>
+            收货人信息
+            <view class='phone'>{{order.receiveName}}   {{order.receivePhone}}</view>
+        </view>   
+    </view>
+    <!-- 商品信息 -->
+    <view class='wrap'>
+        <view class='items' wx:for="{{order.items}}" wx:key='id' data-productId="{{item.productId}}" data-activityId="{{item.activityId}}" data-id="{{item.id}}" bindtap='goProduct'>
+            <image class='icon' src='{{item.productPic}}'></image>
+            <view class='content'>
+                <view class='name'>
+                      {{item.productName}}      
+                </view>
+                <text class='style'>{{item.optionStrs}}</text>
+                <view class='money'>￥{{item.price}}<text class='num'>X{{item.quantity}}</text>
+                <!-- <text class='btn' wx:if="this.state==2||state==3||state==4">退款</text>
+                <text class='btn' wx:if="this.state==5">申请售后</text> -->
+                </view>
+            </view>
+        </view>
+        <view class='total-box'>
+          <view class='total'>商品总价
+              <text>￥{{order.totalPrice}}</text>
+          </view>
+          <view class='total freight'>运费
+              <text>免运费</text>
+          </view>
+          <view class='payment'>实付款（含运费)
+              <text>￥{{order.payPrice}}</text>
+          </view>
+          <view class='payment'>脸金抵扣
+              <text>￥{{order.faceGold}}</text>
+          </view>
+           <view class='payment'>脸金额度抵扣
+              <text>￥{{order.faceGoldCredit}}</text>
+          </view>
+           <view class='payment'>授信脸金抵扣
+              <text>￥{{order.faceGoldFinance}}</text>
+          </view>
+        </view>
+    </view>
+    <!-- 订单信息 -->
+    <view class='order-box'>
+        <text>订单信息</text>
+        <view class='order'>订单编号：{{order.orderNumber}}
+          <label class='lab_copy' bindtap='copyBtn'>复制</label>
+        </view>
+        <view>创建时间：{{order.createTimeStr}}</view>
+        <view wx:if="{{order.state!= 10}}">付款时间：{{order.payTimeStr}}</view>
+        <view wx:if="{{order.state== 35 || order.state == 40}}">发货时间：{{order.sendTimeStr}}</view>
+    </view>
+    <view class='btn-box' wx:if="{{order.state== 30}}">
+      <text class='yellow' bindtap='Confirm' data-orderId='{{order.orderId }}'>确认收货</text>
+    </view>
+</view>

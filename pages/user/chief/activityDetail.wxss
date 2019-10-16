@@ -1,0 +1,114 @@
+page{
+  background-color: #F3F4F6;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  height: 128rpx;
+  position: relative;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.list-box{
+  margin: 20rpx 24rpx;
+  background: #ffffff;
+  border-radius:20rpx;
+  padding: 24rpx;
+  color: #333333;
+  width: calc(100% - 96rpx);
+  margin-top: 20rpx;
+}
+.list-box .Request{
+  height:24rpx;
+  font-size:24rpx;
+  font-weight:500;
+  color:rgba(255,0,0,1);
+  line-height:18rpx;
+  margin-top: 10rpx;
+  margin-bottom: 18rpx
+}
+.list-box .title{
+  font-size: 32rpx;
+  margin-bottom: 14rpx;
+}
+.list-box .type{
+  font-size: 24rpx;
+  margin-bottom: 13rpx;
+}
+.list-box .type text{
+  color: #909090;
+  margin: 0 10rpx;
+}
+.list-box .time{
+  font-size: 24rpx;
+}
+.wrap{
+  margin: 0 24rpx;
+  background: #ffffff;
+  padding: 30rpx 20rpx;
+  text-align: left;
+  width: calc(100% - 96rpx);
+  display: inline-block;
+  margin-bottom: 120rpx;
+
+}
+.wrap .title{
+  color: #333333;
+  font-size: 32rpx;
+}
+.wrap .items{
+  margin-top: 24rpx;
+  width: 200rpx;
+  margin-right: 27rpx;
+  display: inline-block;
+  margin-bottom: 39rpx;
+}
+.wrap .items:nth-child(3n+1){
+  margin-right: 0;
+}
+.wrap .items image{
+  width: 100%;
+  height: 200rpx;
+  object-fit: cover;
+}
+.wrap .items .content .name{
+  font-size: 28rpx;
+  color: #323232;
+  font-weight:500;
+  height: 60rpx;
+  line-height: 30rpx
+}
+.wrap .items .content .money{
+  color: #FF0000;
+  font-size: 36rpx;
+  font-weight:bold;
+  margin-top: 4rpx;
+}
+.wrap .items .content .money text{
+  font-weight:500;
+  text-decoration:line-through;
+  color: #909090;
+  font-feature-settings: 24rpx;
+  margin-left: 5rpx;
+  font-size: 24rpx;
+}
+.btn-box{
+  position: fixed;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #FBCB67;
+  color: #4C2D19;
+  font-size: 32rpx;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}

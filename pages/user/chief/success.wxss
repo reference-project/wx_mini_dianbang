@@ -1,0 +1,130 @@
+page{
+  background-color: #ffffff;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: fixed;
+  height: 128rpx;
+  z-index: 2;
+  top: 0;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  width: 100%;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fbg_img.png)no-repeat center;
+  background-size: 100% 100%;
+  padding: 30rpx 20rpx;
+  text-align: left;
+  display: inline-block;
+  /* margin-top: 150rpx; */
+
+}
+.wrap .title{
+  color: #333333;
+  font-size: 32rpx;
+}
+.wrap .box{
+  padding: 30rpx 50rpx;
+}
+.wrap .items{
+  width: 190rpx;
+  display: inline-block;
+  margin-bottom: 30rpx;
+  margin-right: 40rpx;
+  
+}
+.wrap .items:nth-child(3n){
+  margin-right: 0;
+}
+.wrap .items image{
+  width: 100%;
+  height: 200rpx;
+}
+.wrap .items .content .name{
+  font-size: 28rpx;
+  color: #323232;
+  font-weight:500;
+  margin-top: 5rpx;
+  height: 65rpx;
+  line-height: 34rpx;
+}
+.wrap .items .content .money{
+  color: #FF0000;
+  font-size: 36rpx;
+  font-weight:bold;
+  margin-top: 5rpx
+}
+.chief{
+  text-align: left;
+  margin-top: 20rpx;
+}
+.chief .pic{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  border-radius: 50%;
+}
+.chief .content{
+  width: 350rpx;
+  text-align: left;
+}
+.chief .content .name{
+  color: #333333;
+  font-size: 24rpx;
+}
+.chief .content .signature{
+  font-size: 24rpx;
+  color: #909090;
+  margin-top: 12rpx;
+}
+.chief .codePic{
+  width: 164rpx;
+  height: 157rpx;
+  float: right;
+  margin-right:50rpx;
+  margin-top:-42rpx;
+
+}
+.tc-show{
+  width: 400rpx;
+  height: 300rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  z-index: 112;
+  background: #fff;
+  position: fixed;
+  top: 400rpx
+}
+.tc-show .title{
+  font-size: 32rpx;
+  color: #333333;
+  margin-top: 80rpx;
+}
+.tc-show .span{
+  display: inline-block;
+  width: 230rpx;
+  text-align: center;
+  color: #f0a710;
+  border: 2rpx solid #f0a710;
+  background-color: transparent;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  border-radius: 20rpx;
+  margin-top: 40rpx;
+}
+.tc-show .span.red{
+  background-color: #f0a710;
+  color: #fff;
+  margin-bottom: 34rpx;
+}

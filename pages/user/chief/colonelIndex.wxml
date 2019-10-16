@@ -1,0 +1,56 @@
+<view class='container'>
+    <view class='head-div'>
+        <view class='user-div'>
+            <image class='user fadeInImg' src='{{user.pic}}'></image>
+            <view class='name'>{{credo.name}}
+                <text class='icon'>团长</text>
+            </view>
+            <text class='userId'>团长ID：{{credo.id}}</text>
+        </view>
+        <!-- <button class='qrCode' bindtap='showPopup'></button> -->
+        <button class='Identity' bindtap='goUserIndex'></button>
+    </view>
+    <view class='float-div'>
+        <text class='title' bindtap='goIncome'>历史总收益</text>
+        <text class='money' bindtap='goIncome'>￥{{credo.totalIncome}}</text>
+        <view class='list-div'>
+            <view class='income' data-num="1" bindtap='goIncomes'>
+                {{credo.amount}}
+                <text class='name'>可提现收益</text>
+            </view>
+            <view class='income' data-num="2" bindtap='goIncomes'> 
+                {{waitIncome}}
+                <text  class='name'>待结算收益</text>
+            </view> 
+            <view class='income'>
+                {{monthIncome}}
+                <text  class='name'>本月收益</text>
+            </view>    
+        </view>
+        <view class='nav-btn'>
+            <text class='order' bindtap='goOrder' data-id="{{credo.id}}">我的订单</text>
+            <text class='my' bindtap='goChief'>我的团长</text>
+        </view>
+      </view>
+      <view class='wrap'>
+          <view class='items' bindtap='goActivity' data-id="{{credo.id}}">
+              <text>团购活动</text>
+          </view>
+          <!--<view class='items'>
+              <text>发圈素材</text>
+          </view>-->
+          <view class='items' bindtap='goRank'>
+              <text>团长排行</text>
+          </view>
+          <view class='items' bindtap='goCode' data-id="{{credo.id}}">
+              <text>提货码</text>
+          </view>
+      </view>
+    <!-- 邀请二维码 -->
+    <view class='cover' hidden='{{popup}}' bindtap='hidePopup'></view>
+        <view class='qr-show' hidden='{{popup}}' bindtap='hidePopup'>
+          <image mode='widthFix' src='{{user.qrPicGold}}' catchtap='preview' data-url='{{user.qrPicGold}}'></image>
+      </view>
+</view>
+<footer tabIndex="{{tabIndex}}"></footer>
+

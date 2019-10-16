@@ -1,0 +1,16 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>常见问题</text>
+    </view> -->
+    <scroll-view class="scroll-view_H" scroll-x style="width:100%" wx:if='{{types.length > 0}}'>
+      <view  bindtap='goArticles' class="scroll-view-item" wx:for='{{types}}' data-typeId="{{item.typeId}}" data-name='{{item.name}}'   wx:key='id' data-id="{{item.id}}" >{{item.name}}</view>
+    </scroll-view>
+    <div class="g-box1">
+    	<view class="m-t1">{{title}}</view>
+				<view class="g-ul ul-help"  >
+					<view class='items'  wx:for='{{articles}}' wx:key='id' data-id="{{item.id}}" data-typeId='{{item.typeId}}'  bindtap='goDetails'>
+              <text>{{item.title}}</text>
+          </view>
+				</view>
+			</div>
+</view>

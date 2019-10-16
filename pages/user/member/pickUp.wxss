@@ -1,0 +1,149 @@
+page{
+  background-color: #F3F4F6;
+  text-align: center;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  height: 128rpx;
+  /* top: 0;
+  z-index: 2 */
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.total{
+  padding: 20rpx 24rpx;
+  color: #333333;
+  font-size: 24rpx;
+  text-align: left;
+  width: calc(100% - 48rpx);
+}
+.wrap{
+  margin: 0 24rpx;
+  width: calc(100% - 48rpx);
+  position: relative;
+  /* margin-top: 128rpx; */
+
+}
+.wrap .items{
+  padding: 24rpx;
+  width: calc(100% - 48rpx);
+  background: #ffffff;
+  border-radius: 20rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+  text-align: left;
+}
+.wrap .items .check{
+  width: 40rpx;
+  height: 40rpx;
+  text-align: left;
+  display: inline-block;
+  margin-right: 30rpx;
+}
+.wrap .items .check .icon{
+  position: relative;
+  /* left: 0rpx;
+  top: 63rpx; */
+  width: 40rpx;
+  height: 40rpx;
+} 
+.wrap .items .title{
+  color: #333333;
+  font-size: 26rpx;
+  text-align: left;
+  width: calc(100% - 70rpx);
+  display: inline-block;
+  vertical-align: top;
+}
+.wrap .items .title .orderID{
+  font-size: 24rpx;
+}
+.wrap .items .title .type{
+  position: absolute;
+  right: 24rpx;
+  color: #F0A710;
+  font-size: 24rpx; 
+}
+.wrap .items .default{
+  width: 100%;
+  text-align: left;
+  margin-top: 28rpx;
+}
+.wrap .items .default image{
+  width: 165rpx;
+  height: 165rpx;
+  vertical-align: top;
+  margin-right: 30rpx;
+}
+.wrap .items .default .content{
+  width: calc(100% - 195rpx);
+  text-align: left;
+  display: inline-block;
+}
+.wrap .items .default .content .name{
+  color: #333333;
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.wrap .items .default .content .type{
+  color: #909090;
+  font-size: 24rpx;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
+.wrap .default .content .money{
+  color: #333333;
+  font-size: 28rpx;
+  margin-top: 16rpx;
+}
+.wrap .default .content .money text{
+  color: #909090;
+  font-size: 24rpx;
+}
+.btn-box{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height:100rpx;
+  line-height: 100rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx 0rpx 17rpx 0rpx rgba(0, 0, 0, 0.12);
+  width: 100%;
+  z-index: 5;
+
+}
+.btn-box .selectAlls {
+  text-align: left;
+}
+.btn-box .selectAlls .icon2{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 17rpx;
+    position: relative;
+    top: 10rpx;
+    margin-left: 30rpx
+}
+.btn-box .selectAlls text{
+  color: #909090;
+  font-size: 26rpx;
+}
+.btn-box .yellow{
+  background: #FBCB67;
+  text-align: center;
+  font-size: 32rpx;
+  color: #4C2D19;
+  font-weight:500;
+}
+.btn-box .col-50{
+    display: inline-block;
+}

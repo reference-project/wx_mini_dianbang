@@ -1,0 +1,67 @@
+<view class='container'>	
+    <!-- 审核通过 -->
+    <view wx:if="{{apply.state == 20}}" >
+        <view class='content'>
+            <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fzccg_icon.png'></image>
+            <view class='title'>您已通过团长审核！
+                <view>您已成为团长，可分享您的名片链接来获得团员，分享至好友或朋友圈</view>
+            </view>
+        </view>
+        <view class='qr-code'>
+              <image mode='widthFix' class='code' src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/lequhuwai/images/Parrot.jpg' catchtap='preview' data-url='http://zhishan-test.oss-cn-beijing.aliyuncs.com/lequhuwai/images/Parrot.jpg'></image>
+            <view class='user'>
+                <image  src='{{credo.pic}}' ></image>
+                <view>{{credo.name}}<text>(ID：{{credo.id}})</text></view>
+            </view>
+            <view class='tip'>
+                扫描或长按保存二维码，成为团员享受更多优惠             
+            </view>
+        </view>
+        <view class='text-bottom'>
+            长按可保存图片至手机相册或分享至微信好友及朋友圈                    
+        </view>
+    </view>
+	
+    <!-- 审核中  -->
+    <view wx:if="{{apply.state == 10}}" >
+    <!-- <view> -->
+        <view class='content'>
+            <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsuccess_icon.png'></image>
+            <view class='title'>团长审核中...</view>
+        </view>
+        <view class='list-box'>
+            <view class='time'>
+                <icon></icon>
+                <view class='title'>平台将在1-3个工作日完成审核，请耐心等待~ </view>  
+            </view>
+            <view class='contact'>
+                <icon></icon>
+                <view class='title'>如果您有任何问题，请与客服人员进行联系，客服电话<text class='phone'>{{phone}}</text></view>
+                      
+            </view>
+        </view>
+        <button bindtap='goIndex'>返回首页</button>
+    </view>
+	
+    <!-- 审核失败   -->
+    <view wx:if="{{apply.state == 30}}" >
+        <view class='content'>
+            <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fsh_sb_icon.png'></image>
+            <view class='title'>团长审核失败！ </view>
+        </view>
+        <view class='list-box'>
+            <view class='time'>
+                <icon></icon>
+                失败原因：
+                <text>{{apply.remark}}</text>
+            </view>
+            <view class='contact'>
+                <icon></icon>
+                <view class='title'>如果您有任何问题，请与客服人员进行联系，客服电话<text class='phone'>{{phone}}</text></view>
+                
+            </view>
+        </view>
+        <button bindtap='goModify'>继续申请</button>
+    </view>
+
+  </view>

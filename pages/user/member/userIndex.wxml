@@ -1,0 +1,50 @@
+<view class='container'>
+    <view class='head-div'>
+        <view class='user-div'>
+            <image class='user fadeInImg' src='{{user.pic}}'></image>
+            <text class='name'>{{user.nickname}}</text>
+            <text class='userId' wx:if="this.user !=null">用户ID：{{user.id}}</text>
+        </view>
+        <!-- <button class='qrCode' bindtap='showPopup'></button> -->
+        <button class='Identity' wx:if="{{user.isCredo == 1}}" bindtap='goUserIndex'></button>
+    </view>
+    <view class='wrap'>
+        <text class='title'>我的订单</text>
+        <view class='list-div'>
+            <text class='order navBtn' data-state='0' bindtap='goOrder'>
+                全部订单
+              </text>
+            <text class='payment navBtn' data-state='10' bindtap='goOrder'>
+                待付款
+            </text>
+            <text class='extract navBtn' data-state='35' bindtap='goOrder'>
+                待提货
+            </text>
+            <text class='sale navBtn' bindtap='goSale'>
+                售后
+            </text>
+        </view>
+        <view class='items' bindtap='goCollect'>
+            <text>我的收藏</text>
+        </view>
+        <view class='items' bindtap='goAddress'>
+            <text>收货地址</text>
+        </view>
+        <view class='items' bindtap='goJoin' wx:if="{{user.isCredo == 0}}">
+            <text>成为团长</text>
+        </view>
+        <view class='items' bindtap='goService'>
+            <text>客服服务</text>
+        </view>
+        <view class='items'  bindtap='goProblem'>
+            <text>常见问题</text>
+        </view>
+    </view>
+    <!-- 邀请二维码 -->
+    <view class='cover' hidden='{{popup}}' bindtap='hidePopup'></view>
+        <view class='qr-show' hidden='{{popup}}' bindtap='hidePopup'>
+          <image mode='widthFix' src='{{user.qrPicGold}}' catchtap='preview' data-url='{{user.qrPicGold}}'></image>
+      </view>
+</view>
+<footer tabIndex="{{tabIndex}}"></footer>
+

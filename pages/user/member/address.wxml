@@ -1,0 +1,26 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>收件人地址</text>
+    </view> -->
+	
+    <view class='wrap' wx:if="{{list.length > 0}}">
+        <view class='items' wx:for="{{list}}"   data-id="{{item.id}}" bindtap="goOrder" >
+            <view class='name'>{{item.name}}
+              <text class='phone'>{{item.telephone}}</text>
+              <text class='default' wx:if="{{item.defAddress == 1}}">默认</text>
+            </view>
+            <image  bindtap='edit' data-id='{{item.id}}' src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Faddress_bj2_icon.png'></image>
+            <view class='adress overflow2'>{{item.province + item.city + item.area + item.address}}</view>
+            <view class='clear'></view>
+        </view>
+    </view>
+     <!-- 空页面 -->
+    <view class='null-div'  wx:else>
+        <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fwushouhuojiegu.png'></image>
+        <text>暂无收货地址~</text>
+      </view>
+	
+    <view class='btn-box' bindtap='add'>
+    新增提货人
+    </view>
+</view>

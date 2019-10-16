@@ -1,0 +1,13 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>提现成功</text>
+    </view> -->
+    <view class='wrap text-center'>
+      <image src='http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fzccg_icon.png'></image>
+      <view class='title'>恭喜您！申请提现成功</view>
+    	<view class="btn-wrap font-0">
+				<text class="red span ver-T" bindtap='goRecord'>查看记录</text>
+				<text class="ver-T span" bindtap='goIndex'>返回首页</text>
+			</view>
+    </view>
+</view>

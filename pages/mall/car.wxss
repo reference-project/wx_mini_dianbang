@@ -1,0 +1,241 @@
+page{
+  background-color: #F5F5F5;
+}
+.head-div{
+  height: 130rpx;
+  text-align: center;
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+.wrap{
+  margin: 20rpx 24rpx 220rpx;
+  padding: 40rpx 24rpx;
+  background: #FFFFFF;
+  position: relative;
+  border-radius:20rpx;
+  /* margin-top: 20rpx; */
+  width: calc(100% - 96rpx);
+}
+.wrap .items{
+  width: 100%;
+   position: relative;
+   margin-bottom: 60rpx;
+}
+.wrap .items:last-child{
+  margin-bottom: 0;
+}
+.wrap .items .remove{
+  width: 80rpx;
+  height: 166rpx;
+  position: absolute;
+  top: -0rpx;
+  right: -58px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.5);
+  box-shadow: 0rpx 0rpx 2rpx rgba(175, 175, 175, 0.2);
+}
+.items .remove image{
+  width:80rpx;
+  height:100%;
+
+}
+.wrap .items .check .icon{
+  position: absolute;
+  left: 0rpx;
+  top: 63rpx;
+  width: 40rpx;
+  height: 40rpx;
+
+}
+.wrap .items .text-div{
+  width:390rpx;
+  display:inline-block;
+
+}
+.wrap .items .content{
+  width: calc(100% - 70rpx );
+  text-align: left;
+  display: inline-block;
+  margin-left: 70rpx;
+}
+.wrap  .items .content image{
+  width: 165rpx;
+  height: 165rpx;
+  margin-right: 30rpx;
+  vertical-align: top;
+}
+.wrap .items .content .titel{
+  width: 390rpx;
+  color: #333333;
+  font-size: 28rpx;
+  margin-top: -8rpx;
+
+}
+.wrap .items .content .type{
+  padding: 0 12rpx;
+  height:36rpx;
+  background:rgba(247,247,247,1);
+  border-radius:4rpx;
+  display: inline-block;
+  color: #909090;
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 36rpx;
+  text-align: left;
+}
+.wrap .items .content .amount{
+  width: 100%;
+  color: #fff;
+  /* line-height: 90rpx; */
+  padding-top: 3rpx;
+  padding-bottom: 3rpx;
+  position: relative;
+}
+.wrap .items .content .amount .step{
+  position: absolute;
+  right: 0;
+}
+.wrap .items .content .amount .sum{
+  color: #FF0000;
+  font-size: 36rpx;
+  font-weight:bold;
+}
+.amount .sum text{
+  text-decoration:line-through;
+  color: #909090;
+  font-size: 24rpx;
+}
+.amount .step view.num{
+  background: #F7F7F7;
+  color: #4C2D19;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.amount .step view{
+  display:inline-block;
+  width:50rpx;
+  line-height:50rpx;
+  height:50rpx;
+  text-align:center;
+}
+/* 喜欢商品 */
+.like-div{
+  padding: 0 24rpx;
+  text-align: left;
+  position: relative;
+  /* display: inline-block; */
+  margin-top: 40rpx;
+  padding-bottom: 220rpx;
+  
+}
+.like-div .title{
+  color: #333333;
+  font-size: 28rpx;
+  background: url('http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fcnxh_icon.png') no-repeat center left;
+  background-size: 32rpx;
+  padding-left: 47rpx;
+  
+}
+.like-div .items{
+  background: #FFFFFF;
+  width: 341rpx;
+  height: 490rpx;
+  position: relative;
+  margin-top: 30rpx;
+  border-radius:10rpx; 
+  display: inline-block;
+}
+.like-div .items:nth-child(2n+1){
+  margin-left: 20rpx;
+}
+.like-div .items image{
+  width: 100%;
+  height: 340rpx;
+}
+.like-div .items .content{
+  padding: 0 18rpx;
+}
+.like-div .items .content .name{
+  color: #333333;
+  font-size: 28rpx;
+  font-weight: 500;
+  display: inline-block;
+  }
+.like-div .items .content .money{
+  font-size: 36rpx;
+  color: #FF0000;
+}
+
+
+
+
+/* 底部栏 */
+
+.footer {
+  position: fixed;
+  bottom: 100rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fefefe;
+  font-size: 29rpx;
+  font-weight: 300;
+  z-index: 999;
+  border-bottom: 1rpx solid #e1e1e1;
+}
+
+.footer .col-45{
+  padding-right: 10rpx;
+}
+
+.footer .icon2 {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 17rpx;
+  position: relative;
+  top: 6rpx;
+}
+
+.price2{
+  font-size: 32rpx;
+  color: #dd3539;
+  font-weight: 500;
+}
+
+.btn-f{
+  height: 100rpx;
+  /* padding-top: 15rpx; */
+  float: right;
+}
+
+.btn_footer {
+  font-size: 30rpx;
+  border-radius: 0;
+  width: 295rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  background:rgba(51,51,51,1);
+
+}
+.null-div{
+  margin-top: 80rpx;
+}
+.null-div text{
+  width: 362rpx;
+  margin-top: 0 auto ;
+  display: inline-block;
+  line-height: 34rpx  
+}

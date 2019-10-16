@@ -1,0 +1,31 @@
+<view class='container'>
+    <!-- <view class='head-div'>
+        <text class='titleText'>申请提现</text>
+    </view> -->
+    <view class='wrap'>
+      <view class='items flex-row next' bindtap='selectBank'>
+          <text class='account col-30 text-left'>提现账号</text>
+          <view class='bank-box col-70 text-left'>
+                      {{userBank.bankName}}
+              <text class='num flex-row'>账号{{userBank.bankNumberStr}}</text>
+          </view>
+      </view>
+      <view class='items flex-row'>
+          <text class='money col-30 text-left'>提现金额</text>
+          <input placeholder='请填写' class='col-70' value='{{money}}' type='number' bindinput='getmoney'></input>
+          <text class='unit'>元</text>
+          <view class='clear'></view>
+      </view>
+      <view class='items flex-row'>
+          <text class='money'>可提现金额</text>
+          <text class='red'>￥{{withdrawable}}</text>
+          <span class='yellow' bindtap="cash">全部提现</span>
+      </view>
+      <view class='tips'>
+          <text class='title'>提现说明</text>
+          <rich-text nodes="{{content}}"></rich-text>
+      </view>
+    </view>
+    <view class='submit' bindtap="submit">确认提现</view>
+</view>
+

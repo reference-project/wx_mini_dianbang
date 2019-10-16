@@ -1,0 +1,158 @@
+page{
+  background-color: #ffffff;
+  text-align: center;
+}
+.head-div{
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  height: 128rpx;
+}
+.head-div .titleText{
+  color: #000000;
+  font-weight: bold;
+  font-size: 37rpx;
+  text-align: center;
+  display: inline-block;
+  padding-top: 67rpx;
+}
+/* 审核成功 */
+.content{
+  padding: 40rpx 0 0;
+  text-align: center;
+  background: #ffffff;
+}
+.content image{
+  width: 106rpx;
+  height: 106rpx;
+}
+.content .title{
+  color: #333333;
+  font-size: 34rpx;
+  margin-top: 25rpx;
+  padding: 0 75rpx
+}
+.content .title view{
+  color: #909090;
+  font-size: 28rpx;
+  margin-top: 14rpx;
+  
+}
+.qr-code{
+  width:440rpx;
+  margin: 60rpx auto 0;
+  padding: 50rpx 65rpx 30rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0rpx -4rpx 38rpx 0rpx rgba(0, 0, 0, 0.09);
+  border-radius:40rpx;
+}
+.qr-code .code{
+  width:440rpx;
+  height:440rpx!important;
+  background:rgba(0,0,0,1);
+  border:4rpx solid rgba(225,225,225,1);
+}
+.qr-code .user{
+  text-align: left;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #e1e1e1;
+}
+.qr-code .user image{
+  width:50rpx;
+  height:50rpx;
+  border-radius:50%;
+  vertical-align: top;
+  margin-right: 21rpx;
+}
+.qr-code .user view{
+  display: inline-block;
+  width: calc(100% -71rpx);
+  color: #323232;
+  font-size: 28rpx;
+}
+.qr-code .user view text{
+  color: #909090;
+  margin-left: 15rpx;
+}
+.qr-code .tip{
+  color: #F0A710;
+  font-size: 24rpx;
+  background: url(http://zhishan-test.oss-cn-beijing.aliyuncs.com/dianbang-gg%2Fimage%2Fzwjc_icon.png)no-repeat top left;
+  background-size: 28rpx 30rpx;
+  padding-left: 57rpx;
+  text-align: left;
+  margin-top: 20rpx;
+  vertical-align: top;
+}
+.text-bottom{
+  margin: 30rpx 188rpx;
+  color: #B4B4B4;
+  font-size: 24rpx;
+}
+
+/* 审核中 */
+.list-box{
+  width:602rpx;
+  background:rgba(249,249,249,1);
+  border-radius:10rpx;
+  margin: 30rpx auto 0;
+  padding:  40rpx 20rpx;
+  margin-bottom: 80rpx;
+  text-align: left;
+}
+.list-box .time{
+  color: #909090;
+  font-size: 28rpx;
+}
+.list-box .time .title{
+  color: #808080;
+  font-size: 28rpx;
+  display: inline-table;
+  width: calc(100% - 20rpx);
+}
+.list-box .time .title .phone{
+  color: #F0A710;
+  font-size: 28rpx;
+}
+.list-box .time text{
+  color: #323232;
+}
+.list-box icon{
+  width:8rpx;
+  height:8rpx;
+  background:rgba(251,203,103,1);
+  border-radius:50%;
+  position: relative;
+  top: -5rpx;
+  margin-right: 10rpx;
+}
+.list-box .contact{
+  color: #808080;
+  font-size: 28rpx;
+  display: inline-block;
+  margin-top: 15rpx
+
+}
+.list-box .contact .title{
+  color: #808080;
+  font-size: 28rpx;
+  display: inline-table;
+  width: calc(100% - 20rpx);
+}
+.list-box .contact .phone{
+  color: #F0A710;
+  font-size: 28rpx;
+}
+button{
+  width:540rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  background:rgba(251,203,103,1);
+  border-radius:40px;
+  color: #4C2D19;
+  font-size: 32rpx;
+  text-align: center;
+}
